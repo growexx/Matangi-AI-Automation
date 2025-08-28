@@ -1,0 +1,100 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Regulatory – ChemQuest International",
+            "email": "Regulatory@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Ravi Makwana",
+                "email": "qa@matangiindustries.com"
+            },
+            {
+                "name": "Corinthea Sullivan",
+                "email": "csullivan@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Amaan Abbas",
+                "email": "Amaan@chemquestint.com"
+            },
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Matangi Industries LLP Documentations Request",
+        "date_raw": "Fri, 01 Aug 2025 14:02:07 +0000",
+        "body": {
+            "text": "Hello Ravi,\nHappy Friday!  Received.  Thank you for your prompt response and for the attached documents.  As always, thank you for your continued support."
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Ravi Makwana",
+            "email": "qa@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Corinthea Sullivan",
+                "email": "csullivan@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Amaan Abbas",
+                "email": "Amaan@chemquestint.com"
+            },
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Matangi Industries LLP Documentations Request",
+        "date_raw": "Friday, August 1, 2025 1:04 AM",
+        "body": {
+            "text": "Hello Corinthea,\n\nGood day!\n\nPlease find attached all the certificates as requested.\n\nFeel free to let me know if you need any further assistance."
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Corinthea Sullivan",
+            "email": "csullivan@chemquestint.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "Matangi Industries LLP Documentations Request",
+        "date_raw": "Friday, August 1, 2025 3:16 AM",
+        "body": {
+            "text": "Hello Ravi and Team,\nI’m reaching out to you for assistance.  May I please ask for your assistance in providing us with the following updated certifications?\n\nDocumentations Needed:\n\n  *   Kosher Certificate\n  *   Halal Certificate\n  *   US FDA\n  *   ISO 9001 Certificate\n  *   ISO 14001 Certificate\n  *   REACH/NSF Complaint Certificate\n  *   GMP Certificate\n  *   Any other additional applicable certifications"
+        }
+    }
+}

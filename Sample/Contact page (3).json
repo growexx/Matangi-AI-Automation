@@ -1,0 +1,21 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "BRIAN MAGOSI",
+            "email": "inq@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "salesbd",
+                "email": "salesbd@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "Contact page",
+        "date_raw": "Thu, 14 Aug 2025 16:10:58 +0000",
+        "body": {
+            "text": "<p><b> Name  : </b> BRIAN MAGOSI<br />\n<b> Email :</b> procurement@staxsourcing.co.za<br />\n<b> Company :  </b>STAX Sourcing Company.<br />\n<b> Telephone : </b>0610518931<br />\n<b> Country : </b>South Africa</p>\n<hr style=\"border-top: 1px dashed;\" />\n<br />\n<b> Message : </b>Dear sir/madam,<br />\nI am inquiring about the availability of ethyl hexyl glycerine and the possibilities to supply in bulk.</p>\n<p>Expecting your valuable reply at your earliest expediency.<br />\nRegards</p>\n<p>Magosi Brian | Assistant Procurement Manager </p>\n<p>STAX Sourcing Company.<br />\n</p>\n<hr style=\"border-top: 1px dashed;\" />\n<p>--<br />\nThis e-mail was sent from https://www.matangiindustries.com/contact/</p>"
+        }
+    }
+}

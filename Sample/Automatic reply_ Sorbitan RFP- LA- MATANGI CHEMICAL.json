@@ -1,0 +1,21 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Naylil",
+            "email": "naylil.capreti@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "Automatic reply: Sorbitan RFP- LA- MATANGI CHEMICAL",
+        "date_raw": "Thu, 14 Aug 2025 10:50:18 +0000",
+        "body": {
+            "text": "﻿Dears,\n\nPlease note that I am currently out of the office on holiday and will return on 18/08/2025. For any urgencies, please contact:\n\nNA - Hunter White (hunter.white1@ecolab.com<mailto:hunter.white1@ecolab.com>)\nEAST (AP, IMEA, CN) - Fay Liu (fay.liu@ecolab.com)\nLA - Rebeca De Oliveira (rebeca.deoliveira@ecolab.com<mailto:rebeca.deoliveira@ecolab.com>)\nGLOBAL - Ryan Poage (ryan.poage@ecolab.com)\n\nBest regards!!\n\nNaylil Capreti\nGlobal Sourcing Lead – Surfactants and Glycols\n\nECOLAB SPAIN SERVICES\nAVDA. BAIX LLOBREGAT 3-5\n08970, SANT JOAN DESPÍ (BARCELONA) SPAIN\nPhone (Changed) +34 637 327 401\nE naylil.capreti@ecolab.com<mailto:naylil.capreti@ecolab.com>\n\n\n\nCONFIDENTIALITY NOTICE: This e-mail communication and any attachments may contain proprietary and privileged information for the use of the designated recipients named above. Any unauthorized review, use, disclosure or distribution is prohibited. If you are not the intended recipient, please contact the sender by reply e-mail and destroy all copies of the original message."
+        }
+    }
+}

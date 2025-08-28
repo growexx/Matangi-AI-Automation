@@ -1,0 +1,40 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Mahietab",
+            "email": "inq@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "salesbd",
+                "email": "salesbd@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "Matangi Request page",
+        "date_raw": "Thu, 07 Aug 2025 12:40:37 +0000",
+        "body": {
+            "text": "<p>"
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "Mahietab",
+            "email": "Mahietab.morsy@acdimatrading.com"
+        },
+        "to": [
+            {
+                "name": "salesbd",
+                "email": "salesbd@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "Matangi Request page</p>",
+        "date_raw": "Thu, 07 Aug 2025 12:40:37 +0000",
+        "body": {
+            "text": "<p>Message Body:<br />\n<b> Name  : </b> Mahietab<br />\n<b> Email :</b> Mahietab.morsy@acdimatrading.com<br />\n<b> Company :  </b>Acdima international trading<br />\n<b> Telephone : </b>01125650023<br />\n<b> Product Name : </b>PPG-15 Stearyl Ether<br />\n<b> Country : </b>United States</p>\n<hr style=\"border-top: 1px dashed;\" />\n<br />\n<b> Message : </b>I hope this message finds you well.<br />\nI am currently in the process of developing a foam product and am looking for PPG-15 Stearyl Ether as a key ingredient. I would like to inquire about the following:<br />\nAvailability in Egypt and COA.<br />\nI would greatly appreciate your prompt response with pricing, Deliver time, and minimum order quantity (if applicable).<br />\nThank you in advance for your support.<br />\n</p>\n<hr style=\"border-top: 1px dashed;\" />\n<p>--<br />\nThis e-mail was sent from a contact form on Matangi (http://www.matangiindustries.com)</p>"
+        }
+    }
+}
