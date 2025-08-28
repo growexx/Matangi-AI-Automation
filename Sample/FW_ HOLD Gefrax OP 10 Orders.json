@@ -1,0 +1,114 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Fred George",
+            "email": "fred@connectionchemical.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal (bde4@matangiindustries.com)",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Chelsea George",
+                "email": "chelsea@connectionchemical.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Jessica Fegan",
+                "email": "jessica@connectionchemical.com"
+            },
+            {
+                "name": "Jenny Patel",
+                "email": "jenny@connectionchemical.com"
+            },
+            {
+                "name": "Tracy Gaboury",
+                "email": "tracy@connectionchemical.com"
+            }
+        ],
+        "subject": "FW: HOLD Gefrax OP 10 Orders",
+        "date_raw": "Thu, 14 Aug 2025 16:03:19 +0000",
+        "body": {
+            "text": "Please see attached pictures of the some of the totes that arrived on our order 56948 and your invoice EX2/SC/2526/40052\n\nWe have no idea what this color is from but we are not able to sell the material to our customers.\n\nPlease advise what the color is as material has always been water white.\n\nYour coa does not indicate any color but obviously there is color in the totes some more obvious than others.\n\n\n\nFred George  |  Business Manager Organics\n104 Pheasant Run, Suite 104, Newtown, PA 18940\nPhone: 603-305-6721\nfred@connectionchemical.com<mailto:fred@connectionchemical.com>  |  www.connectionchemical.com<http://www.connectionchemical.com/>\nOffice: 215-493-4240    orders@connectionchemical.com<mailto:orders@connectionchemical.com>\n\n[cid:image002.jpg@01DC0D12.E14944C0]"
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "hmcelroy@chempak.net",
+            "email": "hmcelroy@chempak.net"
+        },
+        "to": [
+            {
+                "name": "Chelsea George",
+                "email": "chelsea@connectionchemical.com"
+            },
+            {
+                "name": "laustin",
+                "email": "laustin@chempak.net"
+            },
+            {
+                "name": "Outbound Chempak",
+                "email": "outbound@chempak.net"
+            },
+            {
+                "name": "zdavis",
+                "email": "zdavis@chempak.net"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Fred George",
+                "email": "fred@connectionchemical.com"
+            }
+        ],
+        "subject": "RE: HOLD Gefrax OP 10 Orders",
+        "date_raw": "Thursday, August 14, 2025 11:08 AM",
+        "body": {
+            "text": "Hi,\n\nBoth outbound and production for OP 10 have been started/will not ship. I have attached photos, along with an up close, of the label with the lot number. As instructed, I will ship the sample off to Lab Services for further review.\n\nThe sample has been pulled and is water clear. Is there a COA you'd like for me to send with the sample?\n\n\nRegards,\nHeather McElroy\nOffice Manager\n\nKL ChemPak, Inc.\n625 S. Old Piedmont HWY\nGreenville, SC 29611\nO: 1 (864) 269-4785 Ext. 2303\nC: 1(864)597-6966"
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Chelsea George",
+            "email": "chelsea@connectionchemical.com"
+        },
+        "to": [
+            {
+                "name": "hmcelroy@chempak.net",
+                "email": "hmcelroy@chempak.net"
+            },
+            {
+                "name": "laustin@chempak.net",
+                "email": "laustin@chempak.net"
+            },
+            {
+                "name": "Outbound Chempak",
+                "email": "outbound@chempak.net"
+            },
+            {
+                "name": "zdavis@chempak.net",
+                "email": "zdavis@chempak.net"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Fred George",
+                "email": "fred@connectionchemical.com"
+            }
+        ],
+        "subject": "HOLD Gefrax OP 10 Orders",
+        "date_raw": "Thursday, August 14, 2025 10:00 AM",
+        "body": {
+            "text": "Good morning,\n\nPlease DO NOT SHIP or repack any Gefrax OP 10 until further notice; this includes Release# 97263 for Buckeye and Production # 33892.\n\nHeather, please send pictures ASAP so Fred can determine next steps.\n\nLatazia, please confirm receipt re: 97263."
+        }
+    }
+}

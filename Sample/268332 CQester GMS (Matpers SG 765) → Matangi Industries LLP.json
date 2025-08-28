@@ -1,0 +1,96 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Corinthea Sullivan",
+            "email": "csullivan@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Ravi Makwana",
+                "email": "qa@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Patricia Naick",
+                "email": "PNaick@chemquestint.com"
+            },
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": " RE: 268332 CQester GMS (Matpers SG 765) → Matangi Industries LLP",
+        "date_raw": "Wed, 13 Aug 2025 14:21:59 +0000",
+        "body": {
+            "text": "Hello Ravi,\nReceived!  Happy Wednesday!  Thank you for your response and for completing the requested information.  I will be in contact if I have any questions.  As always, thank you for your continued support.  Have a wonderful day!"
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Ravi Makwana",
+            "email": "qa@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Corinthea Sullivan",
+                "email": "csullivan@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Patricia Naick",
+                "email": "PNaick@chemquestint.com"
+            },
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: 268332 CQester GMS (Matpers SG 765) → Matangi Industries LLP",
+        "date_raw": "Wednesday, August 13, 2025 5:16 AM",
+        "body": {
+            "text": "Dear Corinthea,\n\nPlease find attached the filled PRQ for CQester GMS (Matpers SG 765) along with the supporting documents.\n\nLet me know if you need further assistance."
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Corinthea Sullivan",
+            "email": "csullivan@chemquestint.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "268332 CQester GMS (Matpers SG 765) → Matangi Industries LLP",
+        "date_raw": "Tuesday, August 12, 2025 9:22 PM",
+        "body": {
+            "text": "Importance: High\n\nHello Ravi and team,\nHappy Tuesday!  May I please ask if you could complete the attached PRQ for Matpers SG 765?  Also please provide a copy of the product flowchart for our records. Thank you and I look forward to your response.\n[cid:image011.png@01DC0C33.83BAE000]"
+        }
+    }
+}

@@ -1,0 +1,422 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "Hi Brenden,\n\n\n\nGood Evening!\n\n\n\nThank you for sharing the specifications.\n\n\n\nWe will review them internally and get back to you shortly.\n\n\n\n*"
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "* Brenden Derstine",
+            "email": "Brenden@OccamSystems.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "Hi Komal,\n\n\n\nFinal specifications would be TBD based on the product sample.  Currently\nthe specifications are:\n\n\n\nAppearance:  Colorless to slight yellow liquid\n\nWater solubility:  Soluble\n\nCloud point in water (1%): >100 °C\n\nPH (1% in water): 6.0 - 8.0\n\nEO Chain length: average 8 - 10\n\n\n\nThese are specifications from other commercially sourced Benzyl Alcohol\nEthoxylates.\n\n\n\nWhat are the estimated costs for your MOQ, would it be possible to include\na test sample for use test before we place a large order?  At full scale\nproduction we project 20 - 40 MT per year.\n\n\n\nBest\n\nBrenden\n\n\n------------------------------"
+        }
+    },
+    "Email 4": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 5": {
+        "type": "Company",
+        "from": {
+            "name": "* Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "James@occamsystems.com>\n\n\n\nDear Brenden,\n\n\n\nGood Day!\n\n\n\nKindly provide the specifications for your requirement. Additionally,\nplease note that our MOQ is 3 MT, which makes the cost more competitive\ncompared to your requirement"
+        }
+    },
+    "Email 6": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 7": {
+        "type": "Client",
+        "from": {
+            "name": "* Brenden Derstine",
+            "email": "Brenden@OccamSystems.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "Hi Komal,\n\n\n\nWe require an EO chain length 6 - 12, ideally average of 8 - 10.  Can you\nshare current product offerings of Benzyl Alcohol Ethoxylates and their\nspecifications so we can compare?\n\n\n\nWe would also ask for cost and lead time for a test batch of material at\n1kg scale.  In addition, can you estimate costs of 100 kg and 1000 kg?"
+        }
+    },
+    "Email 8": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 9": {
+        "type": "Company",
+        "from": {
+            "name": "* Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "James@occamsystems.com>\n\n\n\nHi Brenden,\n\n\n\nGood Afternoon!\n\n\n\nWe would like to inform you that we can offer Benzyl Alcohol Ethoxylates.\nKindly let us know the required mole and, if available, please share the\nspecifications.\n\n\n\nPlease advise on how you would like to proceed"
+        }
+    },
+    "Email 10": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 11": {
+        "type": "Client",
+        "from": {
+            "name": "* Brenden Derstine",
+            "email": "Brenden@OccamSystems.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "Hi Komal,\n\n\n\nI have another inquiry for Benzyl Alcohol Ethoxylates.  Do you carry these\nor are you capable of manufacturing a benzyl alcohol ethoxylate with an EO\nchain greater than 6?"
+        }
+    },
+    "Email 12": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 13": {
+        "type": "Company",
+        "from": {
+            "name": "* Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "Dear Brenden,\n\n\n\nGood Afternoon !\n\n\n\nThank you for your valuable inquiry.\n\n\n\nWe regret to inform you that we do not offer O-ethoxylated 4-nitrophenol or\n4-aminophenol with a degree of ethoxylation >8"
+        }
+    },
+    "Email 14": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*"
+        }
+    },
+    "Email 15": {
+        "type": "Company",
+        "from": {
+            "name": "* Brenden Derstine",
+            "email": "inq@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Brenden Derstine",
+                "email": "Brenden@occamsystems.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "James Ferri",
+                "email": "James@occamsystems.com"
+            }
+        ],
+        "subject": "RE: Contact page",
+        "date_raw": "Mon, 18 Aug 2025 19:38:53 +0530",
+        "body": {
+            "text": "*Name : *Brenden Derstine\n*Email :* brenden@occamsystems.com\n*Company : *Occam Systems\n*Telephone : *2156307132\n*Country : *United States\n------------------------------\n\n\n*Message : *Hello,\nI am looking for O-ethoxylated 4-nitrophenol or 4-aminophenol with a degree\nof ethoxylation >8.\nCan you provide me cost and lead time for either compound? We can get on a\ncall to discuss further.\nThank you\nBrenden Derstine\n------------------------------\n\n--\nThis e-mail was sent from https://www.matangiindustries.com/contact/"
+        }
+    }
+}

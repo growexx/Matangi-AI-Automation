@@ -1,0 +1,194 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Corinthea Sullivan",
+            "email": "csullivan@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Ravi Makwana",
+                "email": "qa@matangiindustries.com"
+            },
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Amaan Abbas",
+                "email": "Amaan@chemquestint.com"
+            }
+        ],
+        "subject": " RE: 264332 CQester EGMS (Matpers GS 465) → Matangi Industries LLP",
+        "date_raw": "Wed, 20 Aug 2025 13:53:16 +0000",
+        "body": {
+            "text": "Hello Ravi,\nThank you for your response.   I appreciate your assistance."
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Ravi Makwana",
+            "email": "qa@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Corinthea Sullivan",
+                "email": "csullivan@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Amaan Abbas",
+                "email": "Amaan@chemquestint.com"
+            }
+        ],
+        "subject": "RE: 264332 CQester EGMS (Matpers GS 465) → Matangi Industries LLP",
+        "date_raw": "Wednesday, August 20, 2025 4:21 AM",
+        "body": {
+            "text": "Hello Corinthea,\n\nGood day.\n\nCQester EGMS (Matpers GS 465) does not contain 1,4 dioxane in the finished product.\n\nHope this helps you.\n\nLet me know if you need further information."
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Regulatory – ChemQuest International",
+            "email": "Regulatory@chemquestint.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: 264332 CQester EGMS (Matpers GS 465) → Matangi Industries LLP",
+        "date_raw": "Tuesday, August 19, 2025 8:35 PM",
+        "body": {
+            "text": "Importance: High\n\nHello Ravi,\nI urgently need your assistance please.  Please confirm is Matpers GS 465 contains 1,4 dioxane.  If so, please provide us with the maximum limit."
+        }
+    },
+    "Email 4": {
+        "type": "Client",
+        "from": {
+            "name": "Regulatory – ChemQuest International",
+            "email": "Regulatory@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Ravi Makwana",
+                "email": "qa@matangiindustries.com"
+            },
+            {
+                "name": "Corinthea Sullivan",
+                "email": "csullivan@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Amaan Abbas",
+                "email": "Amaan@chemquestint.com"
+            }
+        ],
+        "subject": "RE: 264332 CQester EGMS (Matpers GS 465) → Matangi Industries LLP",
+        "date_raw": "Friday, August 1, 2025 9:05 AM",
+        "body": {
+            "text": "Hello Ravi,\nReceived.  Thank you for your prompt response and for the attached files.  I’ll be in touch if I have any additional questions.  As always, thank you for your continued support."
+        }
+    },
+    "Email 5": {
+        "type": "Company",
+        "from": {
+            "name": "Ravi Makwana",
+            "email": "qa@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Corinthea Sullivan",
+                "email": "csullivan@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Tushar Patel",
+                "email": "qaqcmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Regulatory – ChemQuest International",
+                "email": "Regulatory@chemquestint.com"
+            },
+            {
+                "name": "Amaan Abbas",
+                "email": "Amaan@chemquestint.com"
+            }
+        ],
+        "subject": "RE: 264332 CQester EGMS (Matpers GS 465) → Matangi Industries LLP",
+        "date_raw": "Friday, August 1, 2025 4:23 AM",
+        "body": {
+            "text": "Hi Corinthea,\n\nPlease find attached the filled PRQ for CQester EGMS (Matpers GS 465) along with the supporting documents.\n\nLet me know if you need further assistance."
+        }
+    },
+    "Email 6": {
+        "type": "Client",
+        "from": {
+            "name": "Corinthea Sullivan",
+            "email": "csullivan@chemquestint.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "264332 CQester EGMS (Matpers GS 465) → Matangi Industries LLP",
+        "date_raw": "Thursday, July 31, 2025 10:02 PM",
+        "body": {
+            "text": "Hello Ravi,\nHappy Thursday!   I’m reaching out to you for assistance.  May I please ask for your assistance in completing the attached PRQ (Product Regulatory Questionnaire) for Matpers GS 465?  Also, please provide a copy of the product flowchart for our records.  As always, thank you for your partnership and I look forward to your response.\n\n[cid:image007.png@01DC11AF.DC47BC30]"
+        }
+    }
+}
