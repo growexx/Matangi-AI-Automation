@@ -1,0 +1,70 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Angel Rodriguez",
+            "email": "angel.rodriguez@ALLCHEM.COM"
+        },
+        "to": [
+            {
+                "name": "receivables@matangiindustries.com",
+                "email": "receivables@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "salesmgr@matangiindustries.com",
+                "email": "salesmgr@matangiindustries.com"
+            },
+            {
+                "name": "bde4@matangiindustries.com",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Aida Baez",
+                "email": "aida.baez@ALLCHEM.com"
+            },
+            {
+                "name": "Judith Rodriguez",
+                "email": "judith.rodriguez@ALLCHEM.com"
+            }
+        ],
+        "subject": "PU060409 - Upcoming Invoice Due Reminder",
+        "date_raw": "Wed, 20 Aug 2025 12:44:40 +0000",
+        "body": {
+            "text": "Dear Accounting Team:\n\nThis is noted. You should be receiving payment on time like always."
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "receivables@matangiindustries.com",
+            "email": "receivables@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Angel Rodriguez",
+                "email": "angel.rodriguez@ALLCHEM.COM"
+            },
+            {
+                "name": "Shuru Cai",
+                "email": "shuru.cai@ALLCHEM.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "salesmgr",
+                "email": "salesmgr@matangiindustries.com"
+            },
+            {
+                "name": "bde4",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "subject": "[E]Upcoming Invoice Due Reminder",
+        "date_raw": "Wednesday, August 20, 2025 5:02 AM",
+        "body": {
+            "text": "Dear Sir/Madam,\n\nGreetings From Matangi Industries LLP !\n\nThis is to inform you that the payment against the attached invoice details will be due in the next few days. Kindly ensure that the payment is made on time.\n\nIf you have already made the payment, please ignore this email.\n\nThank you for your prompt attention to this matter.\n\nMatangi's Bank Details:\n\nBANK NAME : HDFC BANK\nACCOUNT NUMBER : 50200024833101\nRTGS / IFSC CODE : HDFC0009122\nACCOUNT TYPE : CC ACCOUNT\nBANK ADDRESS : GROUND FLOOR, SHOP NO: 5 TO 9, SHANKHESHWAR IND. PARK, PHASE-I, NR. RAILWAY BRIDGE, VATVA, AHMEDABAD-382245\nBRANCH NAME : VATVA\nIEC CODE : 0894003691\nSwift Code : HDFCINBBAHM\n\n\n\nRegards,\nAccounts Receivable Team"
+        }
+    }
+}

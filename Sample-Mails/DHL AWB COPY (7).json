@@ -1,0 +1,57 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Express 7cepl",
+            "email": "express@7cepl.com"
+        },
+        "to": [
+            {
+                "name": "Ketki Vichhi",
+                "email": "sales3@matangiindustries.com"
+            },
+            {
+                "name": "Debasmita Das",
+                "email": "custsupport@matangiindustries.com"
+            },
+            {
+                "name": "Pinki Shah",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "Kajal Solanki",
+                "email": "sales2@matangiindustries.com"
+            },
+            {
+                "name": "Dipti Rathod",
+                "email": "sales4@matangiindustries.com"
+            },
+            {
+                "name": "Ruchika Tambaskar",
+                "email": "sales6@matangiindustries.com"
+            },
+            {
+                "name": "Nameeta Verma",
+                "email": "salesmgr@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Mayuri Thanki",
+                "email": "sales5@matangiindustries.com"
+            },
+            {
+                "name": "Jay Bhami",
+                "email": "amsales2@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "DHL AWB COPY",
+        "date_raw": "Mon, 04 Aug 2025 10:00:26 +0530",
+        "body": {
+            "text": "Dear mam\nfind attached awb copy\nalso note 7198366932 - Guatemala shipment return due to *DG SHIPMENT*\n-- \n--"
+        }
+    }
+}

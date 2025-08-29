@@ -1,0 +1,64 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Arjun Babu",
+            "email": "ababu@uniquechemsolutions.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Quote for N-methyl-N-hydroxyethyl-p-toluidine (MHPT)",
+        "date_raw": "Wed, 13 Aug 2025 17:04:50 +0000",
+        "body": {
+            "text": "Hello Komal,\n\nThanks very much for your offer. We will revert to you soon.\n\nBest regards,\n[cid:image001.png@01DC0C52.D9506B10]"
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Arjun Babu",
+                "email": "ababu@uniquechemsolutions.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Quote for N-methyl-N-hydroxyethyl-p-toluidine (MHPT)",
+        "date_raw": "August 13, 2025 5:20 AM",
+        "body": {
+            "text": "Dear Mr. Arjun,\n\nGreetings of the day !\n\nPlease find below offer and herewith attached docs for your reference.\n\nProduct            : MHPT\nPrice                 : USD 8000/MT FOB Indian port\n: USD 8140/MT CIF New York 20ft\n\nPacking            : 1000kg IBC Tank & 200kg MS Barrel\nDelivery           : 3-4 Weeks after receiving the order\nOrigin              : India\nOffer Validity   : Subject to reconfirmation while placing the order.\nRest of term remain same.\n\nLooking forward to your confirmation on above shared price."
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Arjun Babu",
+            "email": "ababu@uniquechemsolutions.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "Quote for N-methyl-N-hydroxyethyl-p-toluidine (MHPT)",
+        "date_raw": "13 August 2025 03:00",
+        "body": {
+            "text": "Hello Komal,\nGood day.\nWe are having requirement for below mentioned products, please let us have your best offer to move forward,\nProduct Name : N-methyl-N-hydroxyethyl-p-toluidine (MHPT) CAS# 2842-44-6\nQuantity: 1x20 FT FCL\nPacking: Drums and IBC\nDestination: CIF Newyork\nPricing: Need FOB and Freight separately\nAttach 3 COA, TDS and SDS\nKindly share lead time of the shipment along with country of origin.\nHopefully, we can have your offer at the earliest.\nBest regards,\n[cid:image004.png@01DC0C52.D9506B10]"
+        }
+    }
+}

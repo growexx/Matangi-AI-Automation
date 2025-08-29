@@ -1,0 +1,148 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Richard Barnhardt",
+            "email": "RBarnhardt@FCITechnology.net"
+        },
+        "to": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "Re: Inventory that can ship prior to August 27",
+        "date_raw": "Mon, 18 Aug 2025 11:40:21 +0000",
+        "body": {
+            "text": "I believe that to be the case currently, BUT the last General Tariff change did state to see the NEW Appendix II which we have not seen yet. If it does not change, we are still exempt, but ?\n________________________________"
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Ramesh Patel",
+            "email": "ramesh@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Richard Barnhardt",
+                "email": "RBarnhardt@FCITechnology.net"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "RE: Inventory that can ship prior to August 27",
+        "date_raw": "Monday, August 18, 2025 12:24 AM",
+        "body": {
+            "text": "Dear Richard , I came to know from other USA buyer that there is no any additional tariff for our product which we export under HS CODE - 34024200 /34024290. Current Tariff is 5% only, Same as 2024. C\nExternal"
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Richard Barnhardt",
+            "email": "RBarnhardt@FCITechnology.net"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "Re: Inventory that can ship prior to August 27",
+        "date_raw": "Sunday, August 17, 2025 3:51 AM",
+        "body": {
+            "text": "How much NP-50\n\n\n\nSent from my Verizon, Samsung Galaxy smartphone\nGet Outlook for Android<https://aka.ms/AAb9ysg>\n\n________________________________"
+        }
+    },
+    "Email 4": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Richard Barnhardt",
+                "email": "RBarnhardt@FCITechnology.net"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "Re: Inventory that can ship prior to August 27",
+        "date_raw": "Saturday, August 16, 2025 7:40:24 AM",
+        "body": {
+            "text": "Dear Richard,\n\n\n\nGood Evening!\n\n\n\nAs per our earlier email, we would appreciate it if you could let us know how you would like us to proceed further.\n\n\n\nAdditionally, we would like to inform you that we also have inventory available with NP 50 flakes.\n\n\n\nLooking forward to your response."
+        }
+    },
+    "Email 5": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Richard Barnhardt",
+                "email": "RBarnhardt@fcitechnology.net"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Inventory that can ship prior to August 27",
+        "date_raw": "Tuesday, August 12, 2025 5:20:07 PM",
+        "body": {
+            "text": "Hi Richard,\n\n\n\nGood Afternoon !\n\nWe would like to inform you that the following products are ready:\n\n\n\nSr. No.\n\nProducts\n\n1\n\nSorbitan Mono Oleate (HG)\n\n2\n\nSorbitan Mono Oleate - LM\n\n3\n\nPolysorbate 60 (HG)\n\n4\n\nPolysorbate 80 (HG)\n\n5\n\nCastor oil ethoxylate 5\n\n6\n\nCastor oil ethoxylate 36\n\n7\n\nLauryl alcohol ethoxylate 4\n\n8\n\nLauryl alcohol ethoxylate 9\n\n9\n\nLauryl alcohol ethoxylate 7\n\n10\n\nLauryl alcohol ethoxylate 12\n\n11\n\nNonyl phenol ethoxylate 20\n\n12\n\nNonyl phenol ethoxylate 40 (Waxy solid)\n\n13\n\nOctyl phenol ethoxylate 10\n\n\n\nPlease note that for Lauryl Alcohol Ethoxylate and Nonyl Phenol Ethoxylate, both solid and liquid forms are available, however, flakes are currently not in stock.\n\n\n\nKindly let us know how you would like to proceed."
+        }
+    },
+    "Email 6": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: Inventory that can ship prior to August 27",
+        "date_raw": "11 August 2025 18:56",
+        "body": {
+            "text": "Dear Richard,\n\n\n\nGreetings of the day !\n\n\n\nWe understand your concern regarding the 50% tariff and the impact on future purchases.\n\n\n\nWe will check our records for the products purchased by you in the past two years and review our current inventory and production schedule. We will get back to you shortly with the list of any products that can be shipped and on the water before August 27.\n\n\n\nRest assured, we will prioritize this request and coordinate accordingly."
+        }
+    },
+    "Email 7": {
+        "type": "Client",
+        "from": {
+            "name": "Richard Barnhardt",
+            "email": "RBarnhardt@FCITechnology.net"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "Inventory that can ship prior to August 27",
+        "date_raw": "07 August 2025 23:14",
+        "body": {
+            "text": "Good morning Ramesh and Komal,\n\n\n\nPlease share what if any of the products we have purchased from you in the past 2 years that can be shipped so they are on the water as of August 27,  with the tariffs of 50% it is going to slow our purchases until this is reduced. We cannot sell goods at this cost.\n\n\n\nThanks\n\nRichard\n\n\n\nRichard Barnhardt\n\nFCI Technology\n\nrbarnhardt@fcitechnology.net<mailto:rbarnhardt@fcitechnology.net>\n\n704-629-4630 Ext 1206"
+        }
+    }
+}

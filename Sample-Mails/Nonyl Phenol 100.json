@@ -1,0 +1,82 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Anthony Thompson",
+                "email": "athompson@kraftchemical.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ali Schnitzler",
+                "email": "aschnitzler@kraftchemical.com"
+            },
+            {
+                "name": "Blair Smith",
+                "email": "bsmith@kraftchemical.com"
+            },
+            {
+                "name": "Hillel Adler",
+                "email": "hillel@kraftchemical.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Nonyl Phenol 100",
+        "date_raw": "Thu, 14 Aug 2025 15:26:26 +0530",
+        "body": {
+            "text": "Dear Anthony,\n\n\n\nGood Afternoon!\n\n\n\nPlease find attached the TDS and MSDS for your reference.\n\n\n\nAdditionally, we are currently working on the pricing and will revert to\nyou with the details by Monday.\n\n\n\nKindly let us know the potential for this product as well.\n\n\n\nLet us know if you need any further assistance.\n\n\n\n*"
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "Anthony Thompson",
+            "email": "athompson@kraftchemical.com"
+        },
+        "to": [
+            {
+                "name": "Anthony Thompson",
+                "email": "athompson@kraftchemical.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ali Schnitzler",
+                "email": "aschnitzler@kraftchemical.com"
+            },
+            {
+                "name": "Blair Smith",
+                "email": "bsmith@kraftchemical.com"
+            },
+            {
+                "name": "Hillel Adler",
+                "email": "hillel@kraftchemical.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Nonyl Phenol 100",
+        "date_raw": "Thu, 14 Aug 2025 15:26:26 +0530",
+        "body": {
+            "text": "Hi Komal,\n\n\n\nCan you please provide pricing, availability and your TDS/SDS of Nonyl\nPhenol 100."
+        }
+    }
+}

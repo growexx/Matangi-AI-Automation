@@ -1,0 +1,52 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Vitamin A palmitate 1.7 (Tocopherol)",
+        "date_raw": "Mon, 11 Aug 2025 18:01:37 +0530",
+        "body": {
+            "text": "Dear Habib,\n\n\n\nGood Day!\n\n\n\nWe would like to inform you that we are currently checking with our RnD\nteam and will get back to you shortly with the confirmation.\n\n\n\nThank you for your patience.\n\n\n\n*"
+        }
+    }
+,
+
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Habib Abbas ",
+            "email": "habib@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "Vitamin A palmitate 1.7 (Tocopherol)",
+        "date_raw": "Mon, 11 Aug 2025 18:01:37 +0530",
+        "body": {
+            "text": "Please see attached. I can take a matching product. I need about 1Kg by air ASAP. Please provide a quote for delivered price via air."
+        }
+    }
+}

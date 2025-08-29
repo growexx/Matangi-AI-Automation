@@ -1,0 +1,84 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Tracy Gaboury",
+            "email": "tracy@connectionchemical.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Fred George",
+                "email": "fred@connectionchemical.com"
+            },
+            {
+                "name": "Jenny Patel",
+                "email": "jenny@connectionchemical.com"
+            },
+            {
+                "name": "Jessica Fegan",
+                "email": "jessica@connectionchemical.com"
+            },
+            {
+                "name": "Tracy Gaboury",
+                "email": "tracy@connectionchemical.com"
+            }
+        ],
+        "subject": "RE: Request - Matpers FG 505 (Gefrax OP 10) - Drums/Totes - Re-Approval - PA25-291/292 - Matangi",
+        "date_raw": "Mon, 18 Aug 2025 12:07:39 +0000",
+        "body": {
+            "text": "Hi Komal,\nSorry I thought Mahek was still there, thank you for the update."
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Tracy Gaboury",
+                "email": "tracy@connectionchemical.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Fred George",
+                "email": "fred@connectionchemical.com"
+            },
+            {
+                "name": "Jenny Patel",
+                "email": "jenny@connectionchemical.com"
+            },
+            {
+                "name": "Jessica Fegan",
+                "email": "jessica@connectionchemical.com"
+            }
+        ],
+        "subject": "RE: Request - Matpers FG 505 (Gefrax OP 10) - Drums/Totes - Re-Approval - PA25-291/292 - Matangi",
+        "date_raw": "Monday, August 18, 2025 4:50 AM",
+        "body": {
+            "text": "Dear Tracy,\n\nGreetings of the day!\n\nWe have received your email and are currently working on it. We will share the details with you once completed.\n\nThank you for your patience."
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "Tracy Gaboury",
+            "email": "tracy@connectionchemical.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "Request - Matpers FG 505 (Gefrax OP 10) - Drums/Totes - Re-Approval - PA25-291/292 - Matangi",
+        "date_raw": "15 August 2025 18:46",
+        "body": {
+            "text": "Hi Mahek,\n\nWe are in the process of renewing / updating our documents that are on file since 2021 for this material.  A lot has changed since 2021 on our end and now require additional documentation for this material.  We will also be sending you updated package approval instructions and labels for both pack sizes.\n\nAttachments\n\n  *   PAIR Form - please complete and forward all requested documents/information.\n  *   Supplier Contact Info Form  - Complete all sections\n  *   Product Safety Regulatory Form - Complete/Sign/Date/Return\n  *   Supplier Change Notification Requirements - Sign/Date/Return\n  *   Country of Origin Statement on Supplier's Letterhead (example attached) - please put this on your company letterhead."
+        }
+    }
+}

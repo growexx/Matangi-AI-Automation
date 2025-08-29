@@ -1,0 +1,46 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "purchasing",
+            "email": "purchasing@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "bde4",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "urmi",
+                "email": "urmi@matangi-industries.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "sales1",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "import",
+                "email": "import@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "purchasing",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "habib",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "subject": "Purchase Order 2560312 from ChemQuest International",
+        "date_raw": "Wed, 16 Jul 2025 17:47:53 -0400",
+        "body": {
+            "text": "Hello, \n\nPlease review and confirm the attached Purchase Order. \n\nPO: 2560312\nDue: 8/27/25\n\nThank you."
+        }
+    }
+}

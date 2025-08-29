@@ -1,0 +1,418 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Dear Jose,\n\n\n\nThank you for your prompt response.\n\n\n\n*Dear Victoria,*\n\n\n\nAs mentioned in our earlier email, kindly proceed with the payment for the\nsubject shipment.\n\n\n\nPlease confirm once the payment has been initiated.\n\n\n\n*"
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "Jose Solorzano",
+            "email": "josesolorzano@binexline.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:26:57 +0530",
+        "body": {
+            "text": "Good morning, Komal\n\n\n\nRegarding payment with shipper side should be done by Goulston.\n\nPlease check directly with them,\n\n\n\nThank you\n\nBest Regards.\n\n\n\n*Jose Solorzano / **Manager (**과장**)*\n\n*Import Department*\n\n*BINEX LINE CORP – ATLANTA OFFICE.*\n\n2150 Boggs Rd. STE 120, Duluth, GA 30096.\n\nTEL: 404-768-8866 Ext. 224 DIRECT: 786-381-4701\n\nE-mail: josesolorzano@binexline.com\n\nGroup E-mail ATL: binexatlimp@binexline.com  website : www.binexline.com\n\nCertified C-TPAT member, SVI # binCon152631\n\n\n\n\n\n*** We accept ACH/WIRE and online payment (paycargo.com\n<http://paycargo.com> or cargosprint.com <http://cargosprint.com>)***\n\n****We need 48-72 hours for freight release after OBL and payment fully\nreceived****\n\nThe content of this email is confidential and intended for the recipient\nspecified in message only. It is strictly forbidden to share any part of\nthis message with any third party, without a written consent of the sender.\nIf you received this message by mistake, please reply to this message and\nfollow with its deletion, so that we can ensure such a mistake does not\noccur in the future."
+        }
+    },
+    "Email 3": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Dear Jose,\n\n\n\nGood Afternoon!\n\n\n\nThis is a gentle follow-up regarding our earlier email about the payment\nfor the subject shipment.\n\n\n\nKindly update us on the payment status so we can proceed accordingly.\n\n\n\nLooking forward to your prompt response"
+        }
+    },
+    "Email 4": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Dear Jose,\n\n\n\nGood Afternoon !\n\n\n\nKindly proceed with the payment against the subject shipment.\n\n\n\nPlease let us know once the payment is initiated"
+        }
+    },
+    "Email 5": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Goulston@shipdlx.com>; Victoria Woods <VWoods@goulston.com>\nBuyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.:\nEX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston\nSC, USA\n\n\n\nCAUTION: This email is originated from outside of Binexline Corp. Do not\nclick links or open attachments unless you recognize the sender and know\nthe content is safe.\n\n\n\nDear Jose,\n\nGreetings of the day !\n\nPlease find attached herewith Scan document for COMMERCIAL EX2252640170\nDate 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 //\nSC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. //\nCharleston SC, USA.\n\nPlease note tentative Vessel Schedule as per below.\n\nVessel/ Voy.:  ONE MAGNIFICENCE VOY 081E\n\nETD: 17/07/2025"
+        }
+    },
+    "Email 6": {
+        "type": "Client",
+        "from": {
+            "name": "Jose Solorzano",
+            "email": "josesolorzano@binexline.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421\n20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston\nTechnologies, Inc. // Charleston SC, USA\n\n\n\nDear Komal\n\n\n\nWell noted, please kindly provide us shipping documents at your earliest\nconvenience.\n\nThank you 😊\n\n\n\n\n\nBest Regards.\n\n\n\n*Jose Solorzano / **Manager (**과장**)*\n\n*Import Department*\n\n*BINEX LINE CORP – ATLANTA OFFICE.*\n\n2150 Boggs Rd. STE 120, Duluth, GA 30096.\n\nTEL: 404-768-8866 Ext. 224 DIRECT: 786-381-4701\n\nE-mail: josesolorzano@binexline.com\n\nGroup E-mail ATL: binexatlimp@binexline.com  website : www.binexline.com\n\nCertified C-TPAT member, SVI # binCon152631\n\n\n\n\n\n*** We accept ACH/WIRE and online payment (**paycargo.com*\n<http://paycargo.com/>* or **cargosprint.com* <http://cargosprint.com/>*)***\n\n****We need 48-72 hours for freight release after OBL and payment fully\nreceived****\n\nThe content of this email is confidential and intended for the recipient\nspecified in message only. It is strictly forbidden to share any part of\nthis message with any third party, without a written consent of the sender.\nIf you received this message by mistake, please reply to this message and\nfollow with its deletion, so that we can ensure such a mistake does not\noccur in the future."
+        }
+    },
+    "Email 7": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Goulston@shipdlx.com>; Victoria Woods <VWoods@goulston.com>\nEX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421\n20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston\nTechnologies, Inc. // Charleston SC, USA\n\n\n\nCAUTION: This email is originated from outside of Binexline Corp. Do not\nclick links or open attachments unless you recognize the sender and know\nthe content is safe.\n\n\n\nDear Sir,\n\n\n\nGood Afternoon !\n\n\n\nPlease find below SOB details"
+        }
+    },
+    "Email 8": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421\n20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston\nTechnologies, Inc. // Charleston SC, USA\n\n\n\nDear Jose,\n\n\n\nGood Morning !\n\n\n\nThank you for the update. We will share the shipping documents as soon as\nthey are available"
+        }
+    },
+    "Email 9": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Goulston@shipdlx.com>; Victoria Woods <VWoods@goulston.com>\nEX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421\n20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston\nTechnologies, Inc. // Charleston SC, USA\n\n\n\nCAUTION: This email is originated from outside of Binexline Corp. Do not\nclick links or open attachments unless you recognize the sender and know\nthe content is safe.\n\n\n\nDear Jose,\n\n\n\nWe have already shared the revised ISF details for your reference.\n\n\n\nFor your convenience, I have attached the previous email containing the\nupdated information.\n\n\n\nPlease let us know if anything further is required"
+        }
+    },
+    "Email 10": {
+        "type": "Client",
+        "from": {
+            "name": "Jose Solorzano",
+            "email": "josesolorzano@binexline.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 //\nSC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. //\nCharleston SC, USA\n*Importance:* High\n\n\n\nDear Komal\n\n\n\nWe have reviewed your submitted ISF form and noticed that the Consignee and\ndestination information are incorrect. Kindly revise the ISF form with the\ncorrect details and send the updated version to us as soon as possible.\n\nthank you.\n\nBest Regards.\n\n**HOLIDAY NOTICE**\n\n*7/4 (Friday) : **CLOSED FOR INDEPENDENCE DAY*\n\n*7/7 (Monday) : **RESUME NORMAL BUSINESS HOURS*\n\n\n\n*Jose Solorzano / **Manager (과장)*\n\n*Import Department*\n\n*BINEX LINE CORP – ATLANTA OFFICE.*\n\n2150 Boggs Rd. STE 120, Duluth, GA 30096.\n\nTEL: 404-768-8866 Ext. 224 DIRECT: 786-381-4701\n\nE-mail: josesolorzano@binexline.com\n\nGroup E-mail ATL: binexatlimp@binexline.com  website : www.binexline.com\n\nCertified C-TPAT member, SVI # binCon152631\n\n\n\n\n\n*** We accept ACH/WIRE and online payment (**paycargo.com*\n<http://paycargo.com/>* or **cargosprint.com* <http://cargosprint.com/>*)***\n\n****We need 48-72 hours for freight release after OBL and payment fully\nreceived****\n\nThe content of this email is confidential and intended for the recipient\nspecified in message only. It is strictly forbidden to share any part of\nthis message with any third party, without a written consent of the sender.\nIf you received this message by mistake, please reply to this message and\nfollow with its deletion, so that we can ensure such a mistake does not\noccur in the future."
+        }
+    },
+    "Email 11": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Goulston@shipdlx.com>; Victoria Woods <VWoods@goulston.com>\n// Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.:\nEX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston\nSC, USA\n\n\n\nCAUTION: This email is originated from outside of Binexline Corp. Do not\nclick links or open attachments unless you recognize the sender and know\nthe content is safe.\n\n\n\nDear Jose,\n\n\n\nGood Morning !!\n\n\n\nPlease find the attached ISF details for your reference.\n\n\n\nAdditionally, we will share the shipping documents as soon as they are\navailable"
+        }
+    },
+    "Email 12": {
+        "type": "Client",
+        "from": {
+            "name": "Jose Solorzano",
+            "email": "josesolorzano@binexline.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "// Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.:\nEX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston\nSC, USA\n\n\n\nGood morning, Komal\n\n\n\nVessel scheduled well noted, kindly provide us ISF form and shipping\ndocuments asap.\n\n\n\nThank you\n\nBest Regards.\n\n**HOLIDAY NOTICE**\n\n*7/4 (Friday) : **CLOSED FOR INDEPENDENCE DAY*\n\n*7/7 (Monday) : **RESUME NORMAL BUSINESS HOURS*\n\n\n\n*Jose Solorzano / **Manager (과장)*\n\n*Import Department*\n\n*BINEX LINE CORP – ATLANTA OFFICE.*\n\n2150 Boggs Rd. STE 120, Duluth, GA 30096.\n\nTEL: 404-768-8866 Ext. 224 DIRECT: 786-381-4701\n\nE-mail: josesolorzano@binexline.com\n\nGroup E-mail ATL: binexatlimp@binexline.com  website : www.binexline.com\n\nCertified C-TPAT member, SVI # binCon152631\n\n\n\n\n\n*** We accept ACH/WIRE and online payment (**paycargo.com*\n<http://paycargo.com/>* or **cargosprint.com* <http://cargosprint.com/>*)***\n\n****We need 48-72 hours for freight release after OBL and payment fully\nreceived****\n\nThe content of this email is confidential and intended for the recipient\nspecified in message only. It is strictly forbidden to share any part of\nthis message with any third party, without a written consent of the sender.\nIf you received this message by mistake, please reply to this message and\nfollow with its deletion, so that we can ensure such a mistake does not\noccur in the future."
+        }
+    },
+    "Email 13": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Victoria Woods",
+                "email": "VWoods@goulston.com"
+            },
+            {
+                "name": "Jose Solorzano",
+                "email": "josesolorzano@binexline.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Goulston",
+                "email": "Goulston@shipdlx.com"
+            }
+        ],
+        "subject": "RE: Scan documents for COMMERCIAL EX2252640170 Date 02/07/2025 // Buyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.: EX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston SC, USA",
+        "date_raw": "Tue, 12 Aug 2025 18:28:33 +0530",
+        "body": {
+            "text": "Goulston@shipdlx.com>; Jose Solorzano <josesolorzano@binexline.com>\nBuyer's Order No. & Date: PO 2025-00-16421 20.06.2025 // SC no.:\nEX2/2526/40130 Date 20/06/2025 // Goulston Technologies, Inc. // Charleston\nSC, USA\n\n\n\nCAUTION: This email is originated from outside of Binexline Corp. Do not\nclick links or open attachments unless you recognize the sender and know\nthe content is safe.\n\n\n\nDear Victoria,\n\nGreetings of the day !\n\n\n\nPlease note tentative Vessel schedule as per below,\n\n\n\nParty name: Goulston Technologies, Inc.\n\nContainer Number: OCGU2004820\n\nVessel/ Voy.: ONE MAGNIFICENCE\n0081E\n\n\n\n\nSr no\n\nPI no\n\nProduct name\n\nQuantity (Kg)\n\nContainer no\n\nDispatch Date from Matangi\n\nETD\n\nVessel name\n\nIndicative ETA\n\nMatangi Invoice no\n\n\n\n1\n\nEX2/2526/40130 Date 20/06/2025\n\nMatfab VHC 151\n\n18000.00  KGS\n\nOCGU2004820\n\n02/07/2025\n\n17/07/2025\n\nONE MAGNIFICENCE\n0081E\n\n\n21/08/2025\n\nEX2252640170"
+        }
+    }
+}

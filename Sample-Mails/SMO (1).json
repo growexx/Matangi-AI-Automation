@@ -1,0 +1,26 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Bryan esner",
+            "email": "bryan@neo-syn.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "SMO",
+        "date_raw": "Tue, 22 Jul 2025 17:38:42 +0000",
+        "body": {
+            "text": "Komal,\n\nCan you please send me pricing for the SMO CIF Houston Port. Thank you."
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "receivables",
+            "email": "receivables@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "angel.rodriguez",
+                "email": "angel.rodriguez@ALLCHEM.COM"
+            },
+            {
+                "name": "shuru.cai",
+                "email": "shuru.cai@allchem.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "salesmgr",
+                "email": "salesmgr@matangiindustries.com"
+            },
+            {
+                "name": "bde4",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "subject": "Upcoming Invoice Due Reminder",
+        "date_raw": "Wed, 20 Aug 2025 02:02:05 -0700",
+        "body": {
+            "text": "ear Sir/Madam,<br/><br/>Greetings From Matangi Industries LLP !<br/><br/>This is to inform you that the payment against the attached invoice details will be due in the next few days. Kindly ensure that the payment is made on time.<br/><br/>If you have already made the payment, please ignore this email.<br/><br/>Thank you for your prompt attention to this matter.<br/><br/>Matangi's Bank Details:<br/><br/>BANK NAME : HDFC BANK       \t<br/>ACCOUNT NUMBER : 50200024833101<br/>RTGS / IFSC CODE : HDFC0009122<br/>ACCOUNT TYPE : CC ACCOUNT <br/>BANK ADDRESS : GROUND FLOOR, SHOP NO: 5 TO 9, SHANKHESHWAR IND. PARK, PHASE-I, NR. RAILWAY BRIDGE, VATVA, AHMEDABAD-382245<br/>BRANCH NAME : VATVA<br/>IEC CODE : 0894003691<br/>Swift Code : HDFCINBBAHM<br/><br/><br/><br/>Regards,<br/>Accounts Receivable Team<br/>"
+        }
+    }
+}

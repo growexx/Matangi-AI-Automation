@@ -1,0 +1,400 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Shailesh",
+            "email": "sfirake@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "cc": [],
+        "subject": "FW: Surfactants RFP_update for new approval process",
+        "date_raw": "Mon, 18 Aug 2025 12:23:44 +0000",
+        "body": {
+            "text": "Hi\nWhat is the shelf life of these surfactants?\nRegards\nShailesh Firake"
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Mariama Faye",
+                "email": "mariamafaye.mane@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Naylil",
+                "email": "naylil.capreti@ecolab.com"
+            },
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Fay",
+                "email": "fay.liu@ecolab.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            }
+        ],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "Friday, July 25, 2025 3:07 PM",
+        "body": {
+            "text": "Hello Mariama, Good Afternoon ! Kindly find attached the updated pricing sheet with the best possible rates we can offer. Please note that while the Ex-Works price has decreased, the current sea freight rates have increased compared to earlier,\nZjQcmQRYFpfptBannerStart\nThis Message Is From an External Sender\nThis message came from outside your organization.\nZjQcmQRYFpfptBannerEnd\nHello Mariama,\n\nGood Afternoon !\n\nKindly find attached the updated pricing sheet with the best possible rates we can offer.\n\nPlease note that while the Ex-Works price has decreased, the current sea freight rates have increased compared to earlier, resulting in higher CIF prices."
+        }
+    },
+    "Email 3": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "23 July 2025 18:18",
+        "body": {
+            "text": "Dear Mariama,\n\nGood Evening !\nWe are currently working on it and will get back to you with the details shortly.\n\nThank you for your patience."
+        }
+    },
+    "Email 4": {
+        "type": "Client",
+        "from": {
+            "name": "Mariama Faye",
+            "email": "mariamafaye.mane@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "bde4@matangiindustries.com",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "ramesh@matangiindustries.com",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "Re: Surfactants RFP_update for new approval process",
+        "date_raw": "21 July 2025 18:45",
+        "body": {
+            "text": "Hello Komal,\n\n\nI trust this email finds you well.\n\n\n\nI am writing to provide feedback on our Surfactant RFP, specifically on the pricing submitted. We have thoroughly reviewed your proposal, and I have attached a detailed feedback document specific to your quotation. Please find the following documents for your review:\n\n\n\nYour original price quotation submission\n\nOur detailed feedback and observations\n\n\n\nBased on our assessment:\nWe observe that current pricing levels require further optimization to align with our target objectives\nWe believe there remains room for improvement in terms of competitiveness\nWe invite you to revisit your quotation and submit a revised pricing that reflects your most competitive offer\n\n\nPlease submit your updated pricing at your earliest convenience.\n\nIf you have any questions or require any clarification regarding our feedback, please don't hesitate to reach out.\n\n\n\nWe look forward to your response and continuing our discussions.\n\n\n\nBest regards,\n\n________________________________"
+        }
+    },
+    "Email 5": {
+        "type": "Client",
+        "from": {
+            "name": "Naylil",
+            "email": "naylil.capreti@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Mariama Faye",
+                "email": "mariamafaye.mane@ecolab.com"
+            }
+        ],
+        "cc": [],
+        "subject": "Fw: Surfactants RFP_update for new approval process",
+        "date_raw": "Monday, July 21, 2025 2:15 PM",
+        "body": {
+            "text": "Matangi\n\n\n________________________________"
+        }
+    },
+    "Email 6": {
+        "type": "Client",
+        "from": {
+            "name": "Naylil",
+            "email": "naylil.capreti@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Fay",
+                "email": "fay.liu@ecolab.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            }
+        ],
+        "subject": "Re: Surfactants RFP_update for new approval process",
+        "date_raw": "Tuesday, June 10, 2025 13:06",
+        "body": {
+            "text": "Hello Komal,\n\nNo errors...\n\nWe have different CAS depending on the code used (following applications) and we need to proceed with the informed one for each approval.\nLet me know if is possible to follow the CAS indication and if will need to change the trade name to track. This is important on our approval and supply process.\n\nSome CAS are broader used or more restricted and if you see justification to follow other CAS, we will need a letter saying that are similar.\n\n\nThanks!\n\nNaylil Capreti\n\nGlobal Sourcing Lead – Surfactants\n\nECOLAB SPAIN SERVICES\n\nAVDA. BAIX LLOBREGAT 3-5\n\n08970, SANT JOAN DESPÍ (BARCELONA) SPAIN\n\nPhone (Changed) +55 11 95068 1917\n\nE naylil.capreti@ecolab.com<mailto:naylil.capreti@ecolab.com>\n\n\n\n\n________________________________"
+        }
+    },
+    "Email 7": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Naylil",
+                "email": "naylil.capreti@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Fay",
+                "email": "fay.liu@ecolab.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            }
+        ],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "Tuesday, June 10, 2025 09:04",
+        "body": {
+            "text": "Este mensaje proviene de un remitente externo\nEste mensaje vino de fuera de su organización.\n\n\nDear Naylil,\n\n\n\nGood day !\n\n\n\nAs per your request, we checked with our team and it appears there might have been a mistake or a typographical error. For example, in the case of C12-15 Linear Alcohol, 7 EO, there are two CAS numbers listed for what seems to be the same product. A similar case is seen with C13 [I-TDA] Alcohol XOM, 9 EO.\n\n\n\nKindly review and confirm if this duplication was intentional or an error, so that we can proceed with the necessary checks and provide you with accurate information.\n\n\n\nPrimary Code\n\nChemical name\n\nCustomer CAS number\n\nTrade name\n\nCAS number\n\n173567\n\nC12-15 LINEAR ALCOHOL, 7 EO\n\n68551-12-2\n\nMatpers AF 403\n\n68131-39-5\n\nR-2662\n\nC12-15 LINEAR ALCOHOL, 7 EO\n\n68002-97-1\n\nMatpers AF 403\n\n68131-39-5\n\n170894\n\nC12-15 LINEAR ALCOHOL, 7 EO\n\n68002-97-1\n\nMatpers AF 403\n\n68131-39-5\n\n178244\n\nC13-15 LINEAR ALCOHOL, 7 EO\n\n157627-86-6\n\nMatcare RP 357\n\n\n\nR-8896\n\nC13-15 LINEAR ALCOHOL, 7 EO\n\n68131-39-5\n\nMatcare RP 357\n\n\n\n170327\n\nC13 [I-TDA] ALCOHOL XOM, 9 EO\n\n9043-30-5\n\nMatpers EU 504\n\n24938-91-8\n\nR-54550\n\nC13 [I-TDA] ALCOHOL XOM, 9 EO\n\n69011-36-5\n\nMatpers EU 504\n\n24938-91-8\n\n170327\n\nC13 [I-TDA] ALCOHOL XOM, 9 EO\n\n9043-30-5\n\nMatpers EU 504\n\n24938-91-8\n\n170865\n\nC10 BRANCHED ALCOHOL, 15 EO, 17 PO\n\nMatcare ADB 571\n\n\n\n184333\n\nC12-15 LINEAR ALCOHOL, 5 EO, 4 PO\n\n68439-51-0\n\nMatcare CA 540\n\n120313-48-6\n\n840135\n\nC12-15 LINEAR ALCOHOL, 5 EO, 4 PO\n\n68439-51-0\n\nMatcare CA 540\n\n120313-48-6\n\n172184\n\nC12-15 LINEAR ALCOHOL, 5 EO, 4 PO\n\nMatcare CA 540\n\n120313-48-6\n\n170071\n\nC12-15 LINEAR ALCOHOL, 3 EO\n\n68551-12-2\n\nMatcare AF 102\n\n68131-39-5\n\nR-3112\n\nC12-15 LINEAR ALCOHOL, 3 EO\n\n68002-97-1\n\nMatcare AF 102\n\n68131-39-5\n\n172033\n\nC9-12 LINEAR ALCOHOL, 6 EO\n\n68002-97-1\n\nMatcare NL 926\n\n68439-46-3\n\n184416\n\nC13 [I-TDA] ALCOHOL BASF/SASOL, 8 EO\n\n69011-36-5\n\nMatcare UE 207\n\n78330-21-9\n\n172052\n\nC12-15 LINEAR ALCOHOL, 9 EO\n\n68551-12-2\n\nMatcare CA 306\n\n68131-39-5\n\n178996\n\nC13-15 LINEAR ALCOHOL, 3 EO\n\n157627-86-6\n\nMatcare RP 453\n\n64425-86-1\n\nR-7365\n\nC4 LINEAR ALCOHOL, 40 PO\n\n9003-13-8\n\nMatcare DD 355\n\n170405\n\nC13-15 LINEAR ALCOHOL, 4 EO\n\n157627-86-6\n\nMatcare RP 453\n\n64425-86-1\n\n172026\n\nC13 [I-TDA] ALCOHOL BASF/SASOL, 5 EO\n\n69011-36-5\n\nMatcare UE 500\n\n78330-21-9\n\n170930\n\nC13 [I-TDA] ALCOHOL BASF/SASOL, 12 EO\n\n69011-36-5\n\nMatcare UE 903\n\n78330-21-9\n\nR-7142\n\nC12-14 LINEAR ALCOHOL, 7 EO\n\n68002-97-1\n\nMatcare FM 601\n\n68439-50-9"
+        }
+    },
+    "Email 8": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "03 June 2025 14:53",
+        "body": {
+            "text": "Dear Naylil,\n\n\n\nGood Afternoon !\n\n\n\nWe would like to inform you that the EXW prices we shared already include the packaging cost. As you requested a breakdown for drums and totes, please note that all the pricing provided is based on totes.\n\n\n\nWherever the pricing column is left blank, it indicates that we are currently unable to offer those specific products. For DDP price, we will need your complete delivery address. Once we have that, we can provide you with the DDP pricing accordingly.\n\n\n\nRegarding stock availability and CAS numbers, we will get back to you shortly with the required information."
+        }
+    },
+    "Email 9": {
+        "type": "Client",
+        "from": {
+            "name": "Shailesh",
+            "email": "sfirake@ecolab.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "02 June 2025 18:56",
+        "body": {
+            "text": "Hello Komal\n\nAs per our discussion, could you check price break up for packaging. Do not change the original format and columns.\n\nPls recommend the product which are matching CAS# with Ecolab CAS#\n\nKindly reply to all queries asked by Naylil\n\nRegards\n\nShailesh Firake"
+        }
+    },
+    "Email 10": {
+        "type": "Client",
+        "from": {
+            "name": "Naylil",
+            "email": "naylil.capreti@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Fay",
+                "email": "fay.liu@ecolab.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "Re: Surfactants RFP_update for new approval process",
+        "date_raw": "Sunday, June 1, 2025 8:04 AM",
+        "body": {
+            "text": "Hello Komal,\n\n\n\nThank you for your submission. I will be reviewing the proposal and will inform you if any additional details are needed before providing final feedback.\n\nI noticed that is no package adder included. Could you please confirm if the EXW price includes package costs? Can you breakdown to have bulk prices and drum or tote prices, please?\n\n\n\nQuick pre evaluation shows me some CAS differences:\n\n\n\nCan you check and let me know if for these lines is possible to offer the Ecolab CAS? Feel free to adjust the lines and change the material proposed if needed.\n\n\n\nPrimary Code\n\nReference trade name\n\nEcolab CAS number\n\nTrade name\n\nCAS number\n\n173567\n\nTOMADOL 25-7\n\n68551-12-2\n\nMatpers AF 403\n\n68131-39-5\n\nR-2662\n\nTOMADOL 25-7\n\n68002-97-1\n\nMatpers AF 403\n\n68131-39-5\n\n170894\n\nAlcohols. C10-16. ethoxylated\n\n68002-97-1\n\nMatpers AF 403\n\n68131-39-5\n\n178244\n\nLUTENSOL AO 7\n\n157627-86-6\n\nMatcare RP 357\n\nneed to complete the CAS\n\nR-8896\n\nLUTENSOL AO7\n\n68131-39-5\n\nMatcare RP 357\n\nneed to complete the CAS\n\n170327\n\nLUTENSOL TDA-9 ICONOL TDA 9\n\n9043-30-5\n\nMatpers EU 504\n\n24938-91-8\n\nR-54550\n\nMARLIPAL O 13/90\n\n69011-36-5\n\nMatpers EU 504\n\n24938-91-8\n\n170327\n\nLUTENSOL TDA-9 ICONOL TDA 9\n\n9043-30-5\n\nMatpers EU 504\n\n24938-91-8\n\n170865\n\nPLURAFAC SLF-180\n\nMatcare ADB 571\n\nneed to complete the CAS\n\n184333\n\nDEHYPON LS-54\n\n68439-51-0\n\nMatcare CA 540\n\n120313-48-6\n\n840135\n\nDEHYPON LS 54\n\n68439-51-0\n\nMatcare CA 540\n\n120313-48-6\n\n172184\n\nDEHYPON LS 54 MB\n\nMatcare CA 540\n\n120313-48-6\n\n170071\n\nTOMADOL 25-3\n\n68551-12-2\n\nMatcare AF 102\n\n68131-39-5\n\nR-3112\n\nTOMADOL 25-3\n\n68002-97-1\n\nMatcare AF 102\n\n68131-39-5\n\n172033\n\nTOMADOL 91-6\n\n68002-97-1\n\nMatcare NL 926\n\n68439-46-3\n\n184416\n\nLUTENSOL TO 8\n\n69011-36-5\n\nMatcare UE 207\n\n78330-21-9\n\n172052\n\nTOMADOL 25-9\n\n68551-12-2\n\nMatcare CA 306\n\n68131-39-5\n\n178996\n\nLUTENSOL AO 3\n\n157627-86-6\n\nMatcare RP 453\n\n64425-86-1\n\nR-7365\n\nPLURIOL WI-1715\n\n9003-13-8\n\nMatcare DD 355\n\nneed to complete the CAS\n\n170405\n\nLUTENSOL AO 4\n\n157627-86-6\n\nMatcare RP 453\n\n64425-86-1\n\n172026\n\nLUTENSOL TO 5\n\n69011-36-5\n\nMatcare UE 500\n\n78330-21-9\n\n170930\n\nLUTENSOL® TO 129\n\n69011-36-5\n\nMatcare UE 903\n\n78330-21-9\n\nR-7142\n\nLUTENSOL A65N OR LUTENSOL A07\n\n68002-97-1\n\nMatcare FM 601\n\n68439-50-9\n\n\n\nI would also like to confirm whether the unquoted lines indicate that Matangi is unable to supply. Please confirm if this is the case, as we will use this information to guide future developments— after to confirm that the pricing is competitive and the basic requirements are met. If Matangi is not identified as a development opportunity at this stage, we will not consider it for future allocations.\n\n\n\nI am assuming from our previous conversation that Matangi can delivery on DDP incoterm. Can you please confirm in which regions and the level of stock that can be managed, please?\n\n\n\nThanks!\n\nNaylil Capreti\n\nGlobal Sourcing Lead – Surfactants\n\nECOLAB SPAIN SERVICES\n\nAVDA. BAIX LLOBREGAT 3-5\n\n08970, SANT JOAN DESPÍ (BARCELONA) SPAIN\n\nPhone (Changed) +55 11 95068 1917\n\nE naylil.capreti@ecolab.com<mailto:naylil.capreti@ecolab.com>\n\n\n\n________________________________"
+        }
+    },
+    "Email 11": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Naylil",
+                "email": "naylil.capreti@ecolab.com"
+            },
+            {
+                "name": "Fay",
+                "email": "fay.liu@ecolab.com"
+            },
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "Friday, May 30, 2025 16:18",
+        "body": {
+            "text": "Esta mensagem é de um remetente externo\n\nEsta mensagem veio de fora da sua organização.\n\n\n\nDear Sir,\n\n\n\nGood Evening !\n\nPlease find the attached required details for your reference.\n\n\n\nLet us know if you need any further assistance."
+        }
+    },
+    "Email 12": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "30 May 2025 12:50",
+        "body": {
+            "text": "Hello Sir,\n\n\n\nGood Afternoon !\n\n\n\nWe are currently working on the task and will submit it by the end of the day today."
+        }
+    },
+    "Email 13": {
+        "type": "Client",
+        "from": {
+            "name": "Shailesh",
+            "email": "sfirake@ecolab.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "30 May 2025 12:46",
+        "body": {
+            "text": "Hi Komal\n\nHope you are working on this RFP to submit today end of the day.\n\nRegards\n\nShailesh Firake"
+        }
+    },
+    "Email 14": {
+        "type": "Client",
+        "from": {
+            "name": "Fay",
+            "email": "fay.liu@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Naylil",
+                "email": "naylil.capreti@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            }
+        ],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "Wednesday, May 28, 2025 6:51 PM",
+        "body": {
+            "text": "Hello Komal\n\nSorry could you please submit it by this Friday ? Monday is too late for us .\n\n\n\n\n\nThanks\n\n\n\n\n\nB."
+        }
+    },
+    "Email 15": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Naylil",
+                "email": "naylil.capreti@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Xiao",
+                "email": "xiao.liu@ecolab.com"
+            },
+            {
+                "name": "Shailesh",
+                "email": "sfirake@ecolab.com"
+            },
+            {
+                "name": "Fay",
+                "email": "fay.liu@ecolab.com"
+            }
+        ],
+        "subject": "RE: Surfactants RFP_update for new approval process",
+        "date_raw": "Wednesday, May 28, 2025 9:18 PM",
+        "body": {
+            "text": "Dear Naylil, Good Evening ! Well noted on your instructions below. We would like to inform you that we will be able to submit it on Monday. Kindly confirm if this is acceptable."
+        }
+    },
+    "Email 16": {
+        "type": "Client",
+        "from": {
+            "name": "Naylil",
+            "email": "naylil.capreti@ecolab.com"
+        },
+        "to": [],
+        "cc": [],
+        "subject": "Surfactants RFP_update for new approval process",
+        "date_raw": "27 May 2025 16:44",
+        "body": {
+            "text": "Hello,\n\nMaricarmen Justo conducted a Surfactant RFP last year, covering AA, AE, and EOPO. Since taking over her responsibilities, I have assumed global responsibility for Surfactants. Previously, I focused solely on EOPO, but my scope now includes AA and AE as well.\n\nAttached is a consolidated file outlining our priorities (76 lines) and providing insights into R12 volumes and available volumes. As my focus is on total volumes, I am requesting EXW prices along with select CIF offers. Any additional information required will be addressed during the process.\n\nMy objective is to update pricing and gather essential information to determine the most suitable suppliers for the approval process.\n\nOur primary criterion is specification alignment, and to facilitate this, I have included a reference trade name. Beyond competitiveness, we are also seeking suppliers who can support Ecolab’s standard requirements, including payment terms, formulation, and warehouse locations.\n\nPlease provide the requested information by Friday, the 30th. Additionally, kindly confirm receipt of this request and let me know if providing feedback by Friday is feasible.\n\nFor clarity, I will not provide challenges or detailed feedback—our goal is simply to determine whether we can proceed in the approval process or not.\n\nRegarding EOPO, if you are already in the approval process this will help us to accelerate it.\n\n\n\nThank you for your time and support. Me, Fay and Shailesh will be available if need any additional information.\n\nThanks!\n\nNaylil Capreti\n\nGlobal Sourcing Lead – Surfactants\n\nECOLAB SPAIN SERVICES\n\nAVDA. BAIX LLOBREGAT 3-5\n\n08970, SANT JOAN DESPÍ (BARCELONA) SPAIN\n\nPhone (Changed) +55 11 95068 1917\n\nE naylil.capreti@ecolab.com<mailto:naylil.capreti@ecolab.com>\n\n\n\nCONFIDENTIALITY NOTICE: This e-mail communication and any attachments may contain proprietary and privileged information for the use of the designated recipients named above. Any unauthorized review, use, disclosure or distribution is prohibited. If you are not the intended recipient, please contact the sender by reply e-mail and destroy all copies of the original message."
+        }
+    }
+}

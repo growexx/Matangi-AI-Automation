@@ -1,0 +1,322 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "Dear Habib,\n\n\n\nGood Evening!\n\n\n\nWe confirm receipt of the 20% advance payment against PO 2560316.\n\n\n\nAdditionally, please note that we will share the shipping documents with\nyou as soon as they are available."
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "Habib Abbas",
+            "email": "habib@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "The 20% wire ($12,240) was sent today for PO 2560316 (40181).\n\nPlease stay with the ETD and ETA provided 901/09/25 & 05/10/25\nrespectively)…\n\nPlease provide shipping documents for the last 4 POs in below table…."
+        }
+    },
+    "Email 3": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "2560320"
+        }
+    },
+    "Email 4": {
+        "type": "Client",
+        "from": {
+            "name": "Habib Abbas",
+            "email": "habib@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "2560320"
+        }
+    },
+    "Email 5": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "ramesh@matangiindustries.com>\nInternational <import@chemquestint.com>; Purchasing - ChemQuest\nInternational <purchasing@chemquestint.com>\n2560286 (SG 765"
+        }
+    },
+    "Email 6": {
+        "type": "Client",
+        "from": {
+            "name": "Habib Abbas",
+            "email": "habib@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "ChemQuest International\n2560286 (SG 765).\n\n\n\nPlease send shipping documents for our POs 2560286 & 2560293"
+        }
+    },
+    "Email 7": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "ramesh@matangiindustries.com>\nInternational <import@chemquestint.com>; Purchasing - ChemQuest\nInternational <purchasing@chemquestint.com>\n(Matpers HT 982"
+        }
+    },
+    "Email 8": {
+        "type": "Client",
+        "from": {
+            "name": "Habib Abbas",
+            "email": "habib@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "ChemQuest International\n(Matpers HT 982)\n\n\n\nHave you shipped the container for GMS-165 (Matpers HT 982), PO 2560293?"
+        }
+    },
+    "Email 9": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Ramesh Patel",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Wire 20% for Purchase Orders 2560316",
+        "date_raw": "Wed, 20 Aug 2025 17:38:02 +0530",
+        "body": {
+            "text": "ramesh@matangiindustries.com>\nInternational <import@chemquestint.com>; Purchasing - ChemQuest\nInternational <purchasing@chemquestint.com"
+        }
+    },
+    "Email 10": {
+        "type": "Client",
+        "from": {
+            "name": "Habib Abbas",
+            "email": "habib@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "bde4",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "urmi",
+                "email": "urmi@matangi-industries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "purchasing",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "habib",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "subject": "REVISED Purchase Order 2560293 from ChemQuest International",
+        "date_raw": "11 June 2025 20:30",
+        "body": {
+            "text": "ChemQuest International\n\n\n\nSubject payment was made today. Please expedite the shipment."
+        }
+    }
+}
