@@ -1,0 +1,130 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Ramesh Patel",
+            "email": "ramesh@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Jim Wolfe",
+                "email": "jim.wolfe@paramountcolors.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "kinjal.paramount",
+                "email": "kinjal.paramount@gmail.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Updated Quotes Needed - multiple items",
+        "date_raw": "Mon, 18 Aug 2025 10:35:26 +0530",
+        "body": {
+            "text": "Dear  Jim  ,\n\n\n\nMr.  Darshan  Desai  is  our  New  Sales  head   and  eventually  Komal\nwill  Report  to  Mr.  Darshan  and  Mr.  Darshan  Will  Report  to  Me.\n\n\n\nRegarding  Tariff  Issue  ,  we  Came  to  know  that  our  HSN Code\n34024200/34023900  are  excluded  from  additional  tariff  and   current\ntariff  is  Same  as  2024 , 5%.\n\n\n\nPls.  Check  and  Confirm  ??\n\n\n\n*"
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "Jim Wolfe",
+            "email": "jim.wolfe@paramountcolors.com"
+        },
+        "to": [
+            {
+                "name": "Jim Wolfe",
+                "email": "jim.wolfe@paramountcolors.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "kinjal.paramount",
+                "email": "kinjal.paramount@gmail.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Updated Quotes Needed - multiple items",
+        "date_raw": "Mon, 18 Aug 2025 10:35:26 +0530",
+        "body": {
+            "text": "Thanks Komal\n\nPlease also confirm what HTS Code Matangi is using for paperwork.\n\n\n\nPlease confirm who Darshan is and their role.  That is a new name.\n\n\n\nWe will not be able to get any business with the SML price – the landed\ncost is well above the market price in the US – is there anything else you\ncan do to get a better, competitive price?\n\n\n\nJim Wolfe\n\n\n\n*Paramount Colors, Inc.*\n\n340 RENNER DRIVE, BUILDING C, ELGIN, IL 60123\n\nC: 330-219-4241\n\nhttp://www.paramountcolors.com\n\nISO 9001:2015 Certified Company\n\n[image: ISO][image: ...]"
+        }
+    },
+    "Email 3": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Jim Wolfe",
+                "email": "jim.wolfe@paramountcolors.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "kinjal.paramount",
+                "email": "kinjal.paramount@gmail.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Updated Quotes Needed - multiple items",
+        "date_raw": "Mon, 18 Aug 2025 10:35:26 +0530",
+        "body": {
+            "text": "Dear Jim,\n\n\nGood Afternoon !\n\n\n\nThanks for your information.\n\n\n\nKindly find below our best offer,\n\n\n\nProduct            : Sorbitan Mono Laurate (Vizol SL 729)\n\nPrice                 : USD 2400/MT FOB India Port\n\n\n\nProduct            : Polysorbate 80(HG) - (Nutrimat P 8)\n\nPrice                 : USD 1830/MT FOB India Port\n\n\n\nProduct            : Sorbitan Mono Oleate(HG) – (Nutrimat RS 080)\n\nPrice                 : USD 1900/MT FOB India Port\n\n\n\nProduct            : 2-Phenoxy Ethanol 5ppm (Matpers PH 395)\n\nPrice                 : USD 1870/MT FOB India Port\n\n\n\nPacking            : 1000kg IBC Tank\n\nLead time         : 3-4 weeks after receiving the confirmed order\n\nOffer validity   : Subject to reconfirmation at the time of order placement\n\nRest of term remain same.\n\n\n\nLooking forward to your confirmation on above shared price"
+        }
+    },
+    "Email 4": {
+        "type": "Client",
+        "from": {
+            "name": "Jim Wolfe",
+            "email": "jim.wolfe@paramountcolors.com"
+        },
+        "to": [
+            {
+                "name": "Jim Wolfe",
+                "email": "jim.wolfe@paramountcolors.com"
+            },
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "kinjal.paramount",
+                "email": "kinjal.paramount@gmail.com"
+            },
+            {
+                "name": "Darshan Desai",
+                "email": "saleshead@matangiindustries.com"
+            }
+        ],
+        "subject": "RE: Updated Quotes Needed - multiple items",
+        "date_raw": "Mon, 18 Aug 2025 10:35:26 +0530",
+        "body": {
+            "text": "Hi Ramesh/Komal\n\nThe tariff situation has done nothing but further complicate the market and\npotentially put us further at a disadvantage.\n\nWe need to check with you on some aggressive quotes for the following:\n\n\n\nVizol SL 729 (SML) ideally we need to be $1800USD/MT – last month it was\nnot anywhere close to this – but please give me your best option.\nPotentially 15-18 containers, 5-6 to dispatch per month.\n\nNutrimat P8 (PS80) full specification, including 1,4 Dioxane Spec and EO\nSpec are critical.  This is a huge wild card, potentially 3 to 8 containers\na month for the rest of the year.  Very price sensitive.   We need below\n$1800USD/MT, and we were not close last month and the off spec can’t be\nused in these markets.  May need one container to be mixed with drums.\n\nNutrimat RS 080 1-2 containers a month.\n\nMatpers PH 395, 12-20 drums.\n\n\n\nLet me know.\n\nThanks\n\nJim"
+        }
+    }
+}

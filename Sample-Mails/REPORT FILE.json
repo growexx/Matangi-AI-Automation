@@ -1,0 +1,70 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "Rushali - Vishal Shipping",
+            "email": "doc.ahd@vishalshipping.com"
+        },
+        "to": [
+            {
+                "name": "Nirav Panchal",
+                "email": "impex@matangiindustries.com"
+            },
+            {
+                "name": "Madhuri Kshatri",
+                "email": "export.doc@matangiindustries.com"
+            },
+            {
+                "name": "bde4",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "Mayuri Thanki",
+                "email": "sales5@matangiindustries.com"
+            },
+            {
+                "name": "Urmi Parikh",
+                "email": "sales3@matangiindustries.com"
+            },
+            {
+                "name": "sales4",
+                "email": "sales4@matangiindustries.com"
+            },
+            {
+                "name": "Nameeta Verma",
+                "email": "salesmgr@matangiindustries.com"
+            },
+            {
+                "name": "Jaymin Chauhan",
+                "email": "exports@matangiindustries.com"
+            },
+            {
+                "name": "Kalpesh Gajera",
+                "email": "amexport@matangiindustries.com"
+            },
+            {
+                "name": "mgrppc",
+                "email": "mgrppc@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "milan",
+                "email": "milan@vishalshipping.com"
+            },
+            {
+                "name": "Jugal Dave",
+                "email": "jugal@vishalshipping.com"
+            },
+            {
+                "name": "VSAPL Sanjay Darji",
+                "email": "sanjay@vishalshipping.com"
+            }
+        ],
+        "subject": "REPORT FILE",
+        "date_raw": "Mon, 18 Aug 2025 15:48:05 +0530",
+        "body": {
+            "text": "REPORT FILE"
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "Email 1": {
+        "type": "Client",
+        "from": {
+            "name": "IMPORT - ChemQuest International",
+            "email": "import@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "IMPORT - ChemQuest International",
+                "email": "import@chemquestint.com"
+            },
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            }
+        ],
+        "subject": "RE: REVISED Purchase Order 2560316 from ChemQuest International",
+        "date_raw": "Fri, 01 Aug 2025 16:09:30 +0000",
+        "body": {
+            "text": "Hi Komal,\n\nPlease send revised documents showing the correct dates.  The ETD you have is 01/09/2025 but we asked for an ETD of 04/08/2025.  Also the date shows an ETA of 16/12/2024 which was last year.  We asked for an ETA of 01/09/2025."
+        }
+    },
+    "Email 2": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Purchasing - ChemQuest International",
+                "email": "purchasing@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Habib Abbas",
+                "email": "habib@chemquestint.com"
+            },
+            {
+                "name": "ramesh",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "Drashti Prajapati",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "IMPORT - ChemQuest International",
+                "email": "import@chemquestint.com"
+            }
+        ],
+        "subject": "RE: REVISED Purchase Order 2560316 from ChemQuest International",
+        "date_raw": "Thursday, July 31, 2025 11:44 PM",
+        "body": {
+            "text": "Dear Rebeca,\n\n\n\nGood Morning !\n\n\n\nPlease find attached the following documents for your reference.\n\n\n\nProforma Invoice (PI)\n\nDraft Bill of Lading (BL)\n\nDraft Packing List\n\nDraft Commercial Invoice\n\n\n\nKindly review the documents and let us know if any changes are required so we can update them accordingly.\n\n\n\nAdditionally, we kindly request you to share the signed copy of the PI at your earliest convenience.\n\n\n\nPlease feel free to reach out if you need any further assistance."
+        }
+    },
+    "Email 3": {
+        "type": "Client",
+        "from": {
+            "name": "purchasing@chemquestint.com",
+            "email": "purchasing@chemquestint.com"
+        },
+        "to": [
+            {
+                "name": "bde4@matangiindustries.com",
+                "email": "bde4@matangiindustries.com"
+            },
+            {
+                "name": "urmi@matangi-industries.com",
+                "email": "urmi@matangi-industries.com"
+            },
+            {
+                "name": "ramesh@matangiindustries.com",
+                "email": "ramesh@matangiindustries.com"
+            },
+            {
+                "name": "sales1@matangiindustries.com",
+                "email": "sales1@matangiindustries.com"
+            },
+            {
+                "name": "import@chemquestint.com",
+                "email": "import@chemquestint.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "purchasing@chemquestint.com",
+                "email": "purchasing@chemquestint.com"
+            },
+            {
+                "name": "habib@chemquestint.com",
+                "email": "habib@chemquestint.com"
+            }
+        ],
+        "subject": "REVISED Purchase Order 2560316 from ChemQuest International",
+        "date_raw": "28 July 2025 20:28",
+        "body": {
+            "text": "Hello,\n\n\n\nPlease review and confirm the attached REVISED Purchase Order.\n\n\n\nPO: 2560316\n\nDue: 9/1/25\n\n\n\nThank you.\n\n\n\n\n\n\n\nREVISION.........Updated price on 7/28."
+        }
+    }
+}

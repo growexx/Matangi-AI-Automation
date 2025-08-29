@@ -1,0 +1,58 @@
+{
+    "Email 1": {
+        "type": "Company",
+        "from": {
+            "name": "Komal Kalal",
+            "email": "bde4@matangiindustries.com"
+        },
+        "to": [
+            {
+                "name": "Rebeca",
+                "email": "rebeca.deoliveira@ecolab.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Edmilson",
+                "email": "ejgomes@ecolab.com"
+            },
+            {
+                "name": "Luana",
+                "email": "luana.melo@ecolab.com"
+            }
+        ],
+        "subject": "Re: 178616-Matpers OL 830 - Matangi",
+        "date_raw": "Thu, 14 Aug 2025 14:12:51 +0000",
+        "body": {
+            "text": "Dear Rebeca,\n\nWell noted on your email. We will share the COA shortly.\n\nBest regards\nKomal Kalal\n\nSent from Outlook for Android<https://aka.ms/AAb9ysg>\n________________________________"
+        }
+    },
+    "Email 2": {
+        "type": "Client",
+        "from": {
+            "name": "Rebeca",
+            "email": "rebeca.deoliveira@ecolab.com"
+        },
+        "to": [
+            {
+                "name": "Komal Kalal",
+                "email": "bde4@matangiindustries.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Edmilson",
+                "email": "ejgomes@ecolab.com"
+            },
+            {
+                "name": "Luana",
+                "email": "luana.melo@ecolab.com"
+            }
+        ],
+        "subject": "178616-Matpers OL 830 - Matangi",
+        "date_raw": "Thursday, August 14, 2025 6:51:53 PM",
+        "body": {
+            "text": "Hello, Komal\n\nI hope you are fine,\n\n\n\nI decided to separate the emails by material to make it clearer what's missing from each. This one is missing the COA. Could you send it?"
+        }
+    }
+}
