@@ -1,19 +1,14 @@
-#!/usr/bin/env python3
-"""
-JSON Conversion Module
-Handles converting MongoDB thread data to JSON format and objects
-"""
-
 import json
 import sys
 import os
+from types import SimpleNamespace
 from typing import Dict, Any
 
 # Add project root to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from logger.logger_setup import logger as log
-from Utility.email_thread_object import create_email_thread_object, show_thread_object
+from Utility.email_thread_object import create_email_thread_object
 
 
 def convert_thread_to_json(thread_data: Dict[str, Any], thread_id: str) -> Dict[str, Any]:
@@ -38,12 +33,16 @@ def convert_thread_to_json(thread_data: Dict[str, Any], thread_id: str) -> Dict[
     return final_json
 
 
-def convert_json_to_object(final_json: Dict[str, Any]) -> None:
+def convert_json_to_object(final_json: Dict[str, Any]) -> SimpleNamespace:
     """
-    Convert JSON structure to object and log
+    Convert JSON structure to object
     
     Args:
         final_json: JSON structure to convert
+        
+    Returns:
+        SimpleNamespace object representing the thread
     """
-
     thread_obj = create_email_thread_object(final_json)
+    log.info("Created thread object for thread ID: %s", final_json.get('thread_id'))
+    return thread_obj
