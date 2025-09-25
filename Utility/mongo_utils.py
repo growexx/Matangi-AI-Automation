@@ -13,19 +13,29 @@ def extract_new_content(body_text):
     
     import re
     
-    # Remove quoted reply patterns (handle all variations)
-    # Pattern 1: "On ... at ... <email> wrote:" (Gmail style - various formats)
-    patterns_to_remove = [
-        r'\n\nOn .+? at .+? .+? <.+?>\s*wrote:.*$',  # Standard Gmail pattern
-        r'On .+? at .+? .+? <.+?>\s*wrote:.*$',      # Gmail pattern without leading newlines
-        r'\n\nOn .+?, .+? at .+? .+? <.+?> wrote:.*$', # With comma after day
-        r'On .+?, .+? at .+? .+? <.+?> wrote:.*$',     # With comma, no leading newlines
-        r'\n\n.*?<.+?>\s*wrote:.*$',                   # Generic <email> wrote: pattern
-        r'.*?<.+?>\s*wrote:.*$',                       # Generic pattern without newlines
+    # First, let's find where quoted content starts and preserve content before it
+    quoted_patterns = [
+        r'(\n\s*On .+? at .+? .+? <.+?>\s*wrote:)',  # Standard Gmail pattern
+        r'(\n\s*On .+?, .+? at .+? .+? <.+?> wrote:)', # With comma after day
+        r'(\n\s*.*?<.+?>\s*wrote:)',                   # Generic <email> wrote: pattern
+        r'(\n\s*From:)',                               # Outlook style
+        r'(\n\s*----.*Original Message.*----)',        # Forward patterns
+        r'(\n\s*_{5,})',                              # Divider lines
     ]
     
-    for pattern in patterns_to_remove:
-        body_text = re.sub(pattern, '', body_text, flags=re.DOTALL | re.IGNORECASE)
+    # Find the earliest quote marker
+    earliest_match = None
+    earliest_pos = len(body_text)
+    
+    for pattern in quoted_patterns:
+        match = re.search(pattern, body_text, re.IGNORECASE | re.DOTALL)
+        if match and match.start() < earliest_pos:
+            earliest_pos = match.start()
+            earliest_match = match
+    
+    # If we found quoted content, keep only the part before it
+    if earliest_match:
+        body_text = body_text[:earliest_pos]
     
     # Split into lines for line-by-line processing
     lines = body_text.split('\n')
@@ -34,8 +44,8 @@ def extract_new_content(body_text):
     for line in lines:
         line_stripped = line.strip()
         
-        # Stop at common quoted text indicators
-        if (line_stripped.startswith('On ') and ('wrote:' in line_stripped or 'wrote:' in lines[lines.index(line):lines.index(line)+2] if lines.index(line)+1 < len(lines) else False)) or \
+        # Skip lines that look like quoted content indicators
+        if (line_stripped.startswith('On ') and 'wrote:' in line_stripped) or \
            (line_stripped.startswith('From:')) or \
            (line_stripped.startswith('Sent:')) or \
            (line_stripped.startswith('To:')) or \
@@ -84,21 +94,50 @@ def _message_to_doc(uid, msg, folder):
     # Extract body content and clean it
     body_content = ""
     if msg.is_multipart():
+        # First try to find text/plain part
         for part in msg.walk():
             if part.get_content_type() == "text/plain":
                 try:
-                    body_content = part.get_payload(decode=True).decode('utf-8', errors='ignore')
-                    break
-                except Exception:
+                    payload = part.get_payload(decode=True)
+                    if payload:
+                        body_content = payload.decode('utf-8', errors='ignore')
+                        break
+                except Exception as e:
+                    log.warning(f"Error decoding part: {e}")
                     continue
+        
+        # If no text/plain part found, try to get any text content
+        if not body_content:
+            for part in msg.walk():
+                if part.get_content_maintype() == 'text':
+                    try:
+                        payload = part.get_payload(decode=True)
+                        if payload:
+                            body_content = payload.decode('utf-8', errors='ignore')
+                            break
+                    except Exception as e:
+                        log.warning(f"Error decoding text part: {e}")
+                        continue
     else:
+        # For non-multipart messages
         try:
-            body_content = msg.get_payload(decode=True).decode('utf-8', errors='ignore')
-        except Exception:
-            body_content = str(msg.get_payload())
+            payload = msg.get_payload(decode=True)
+            if payload:
+                body_content = payload.decode('utf-8', errors='ignore')
+            else:
+                body_content = str(msg.get_payload() or '')
+        except Exception as e:
+            log.warning(f"Error decoding message: {e}")
+            body_content = str(msg.get_payload() or '')
     
-    # Extract only the new content (remove quoted text)
-    body_content = extract_new_content(body_content)
+    # Clean up the body content
+    if body_content:
+        # Remove any null bytes that might cause issues
+        body_content = body_content.replace('\x00', ' ')
+        # Extract only the new content (remove quoted text)
+        body_content = extract_new_content(body_content)
+    else:
+        log.warning("Empty body content after extraction")
 
     # Decode headers safely
     try:
@@ -207,7 +246,25 @@ def get_thread_from_mongo(thread_id: str, limit: int = 5):
             if simple_doc:
                 all_messages = simple_doc.get("messages", [])
                 if all_messages:
-                    all_messages_sorted = sorted(all_messages, key=lambda x: x.get("date", datetime.datetime.min))
+                    def get_fallback_date(msg):
+                        date_val = msg.get('date', datetime.datetime.min)
+                        if isinstance(date_val, str):
+                            try:
+                                from dateutil import parser
+                                parsed_date = parser.parse(date_val)
+                                if parsed_date.tzinfo is not None:
+                                    parsed_date = parsed_date.replace(tzinfo=None)
+                                return parsed_date
+                            except (ValueError, AttributeError):
+                                return datetime.datetime.min
+                        elif isinstance(date_val, datetime.datetime):
+                            if date_val.tzinfo is not None:
+                                return date_val.replace(tzinfo=None)
+                            return date_val
+                        else:
+                            return datetime.datetime.min
+                    
+                    all_messages_sorted = sorted(all_messages, key=lambda x: get_fallback_date(x))
                     thread_doc = {
                         "thread_id": thread_id,
                         "subject": simple_doc.get("subject", "No Subject"),
@@ -231,7 +288,28 @@ def get_thread_from_mongo(thread_id: str, limit: int = 5):
             return None
         
         # Sort by date for chronological order
-        all_messages = sorted(all_messages, key=lambda x: x.get('date', datetime.datetime.min))
+        def get_message_date(msg):
+            date_val = msg.get('date')
+            if isinstance(date_val, str):
+                try:
+                    from dateutil import parser
+                    parsed_date = parser.parse(date_val)
+                    # Convert to naive datetime if it has timezone info
+                    if parsed_date.tzinfo is not None:
+                        parsed_date = parsed_date.replace(tzinfo=None)
+                    return parsed_date
+                except (ValueError, AttributeError):
+                    return datetime.datetime.min
+            elif isinstance(date_val, datetime.datetime):
+                # Convert to naive datetime if it has timezone info
+                if date_val.tzinfo is not None:
+                    return date_val.replace(tzinfo=None)
+                return date_val
+            else:
+                return datetime.datetime.min
+            
+        all_messages = sorted(all_messages, key=lambda x: get_message_date(x))
+        
         
         thread_data = {
             "thread_id": thread_id,
@@ -257,15 +335,12 @@ def get_thread_from_mongo(thread_id: str, limit: int = 5):
                     else:
                         from_name = str(from_field)
                 
-                # Extract and clean body content
+                # Extract body content (already cleaned when stored)
                 body_content = (msg.get("body") or 
                               msg.get("Body") or 
                               msg.get("text_content") or 
                               msg.get("plain_text") or 
                               msg.get("content") or "").strip()
-                
-                # Clean quoted text from body content
-                body_content = extract_new_content(body_content)
                 
                 folder = msg.get("folder", "") or msg.get("Folder", "")
                 
