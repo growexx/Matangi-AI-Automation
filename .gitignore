@@ -1,0 +1,7 @@
+# General Ignores
+requirements.txt
+config/config.ini
+
+# Python Ignores
+__pycache__/
+
