@@ -40,5 +40,3 @@ RECONNECT_DELAY = int(config.get('monitor', 'reconnect_delay', fallback='10'))
 MONGO_URI = config.get('mongo', 'uri')
 MONGO_DB = config.get('mongo', 'db')
 MONGO_COL = config.get('mongo', 'collection')
-
-# Note: PROCESSED_KEYWORD removed - not needed with pure IDLE monitoring

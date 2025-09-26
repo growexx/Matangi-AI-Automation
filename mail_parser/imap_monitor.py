@@ -11,9 +11,10 @@ from logger.logger_setup import logger as log
 from mail_parser.auth_handler import token_manager
 from mail_parser.processor import process_uid
 from Utility.mongo_utils import mongo_connect
+from Utility.uid_tracker import uid_tracker, initialize_uid_tracking
 
 def connect_with_oauth():
-    # Connect to IMAP using OAuth authentication with enhanced resilience
+    """Connect to IMAP using OAuth authentication with enhanced resilience."""
     try:
         # Check if token needs proactive refresh
         if token_manager.is_token_about_to_expire(buffer_seconds=300):
@@ -33,6 +34,7 @@ def connect_with_oauth():
         # Store current token hash for change detection
         token_manager._current_token_hash = hash(access_token)
         
+        log.debug("IMAP connected")
         return client
         
     except Exception as e:
@@ -60,8 +62,10 @@ def connect_with_oauth():
     raise
 
 def start_email_monitor():
-    # Main monitoring loop with OAuth authentication - processes only NEW emails detected by IDLE
-    log.info("Started email monitoring...")
+    """Main monitoring loop with OAuth authentication - processes only NEW emails detected by IDLE."""
+
+    log.info("Starting email monitor...")
+
 
   
 
@@ -69,7 +73,7 @@ def start_email_monitor():
     client = None
     
     def safe_connect():
-        # Safely connect with retries
+        """Safely connect with retries."""
         nonlocal mongo_col, client
         
         # Close existing client if it exists
@@ -85,11 +89,11 @@ def start_email_monitor():
                 # Connect to MongoDB only once
                 if mongo_col is None:
                     mongo_col = mongo_connect()
+                    log.info("MongoDB connected")
                 
                 client = connect_with_oauth()
                 if attempt == 0:  # Only log on first successful attempt
-                    log.info(" IMAP ready")
-                            
+                    log.debug("IMAP connection ready")
                 return True
             except Exception as e:
                 log.error(f"Connection attempt {attempt+1} failed: {e}")
@@ -108,11 +112,26 @@ def start_email_monitor():
         log.error("Failed to establish initial connections, exiting...")
         return
 
+    # Initialize UID tracking on first run (if no last processed UID exists)
+    if uid_tracker.get_last_processed_uid() is None:
+        log.info("First run detected - initializing UID tracking with latest inbox UID...")
+        try:
+            latest_uid = initialize_uid_tracking(client)
+            if latest_uid:
+                log.info("UID tracking initialized with UID: %s", latest_uid)
+            else:
+                log.warning("Failed to initialize UID tracking, will process all new emails")
+        except Exception as e:
+            log.warning("UID initialization failed: %s, will process all new emails", e)
+    else:
+        log.info("UID tracking active - last processed: %s", uid_tracker.get_last_processed_uid())
+
     consecutive_errors = 0
     
     try:
         while True:
             try:
+                log.debug("Checking for new emails...")
                 
                 # Check if token was refreshed by another component
                 if token_manager.has_token_changed():
@@ -147,15 +166,45 @@ def start_email_monitor():
 
                 if responses:
                     log.info("New email detected by IDLE")
-                    # IDLE only triggers for NEW emails - no UID comparison needed!
+                    # IDLE only triggers for NEW emails - trust IDLE and process recent UIDs
                     try:
-                        # Get the latest UIDs (IDLE already filtered NEW emails)
+                        # Get all current UIDs
                         all_uids = client.search(['ALL'])
                         if all_uids:
-                            # Process the latest email(s) - IDLE ensures they're new
-                            latest_uid = all_uids[-1]  # Most recent UID
-                            log.info("Processing new email UID: %s", latest_uid)
-                            process_uid(client, mongo_col, latest_uid, folder=MAILBOX)
+                            # Get last processed UID for comparison
+                            last_processed_uid = uid_tracker.get_last_processed_uid()
+                            
+                            if last_processed_uid:
+                                # Process all UIDs greater than last processed
+                                new_uids = [uid for uid in all_uids if int(uid) > int(last_processed_uid)]
+                                if new_uids:
+                                    # Sort UIDs to ensure sequential processing
+                                    new_uids = sorted(new_uids)
+                                    log.info("Processing %d new emails: UIDs %s", len(new_uids), new_uids)
+                                    
+                                    # Process each email sequentially and update UID tracker after each success
+                                    for uid in new_uids:
+                                        try:
+                                            log.debug("Processing UID: %s", uid)
+                                            success = process_uid(client, mongo_col, uid, folder=MAILBOX)
+                                            if success:
+                                                # Update UID tracker immediately after successful processing
+                                                uid_tracker.update_last_processed(uid)
+                                                log.info("Processed UID %s (thread %s)", uid, uid_tracker.get_last_processed_uid())
+                                            else:
+                                                log.warning("Failed to process UID %s, continuing with next", uid)
+                                        except Exception as e:
+                                            log.exception("Error processing UID %s: %s", uid, e)
+                                            # Continue processing other emails even if one fails
+                                else:
+                                    log.debug("No new emails found")
+                            else:
+                                # No last UID - just process the latest email (IDLE triggered)
+                                latest_uid = all_uids[-1]
+                                log.info("Processing latest email UID: %s", latest_uid)
+                                success = process_uid(client, mongo_col, latest_uid, folder=MAILBOX)
+                                if success:
+                                    uid_tracker.update_last_processed(latest_uid)
                         else:
                             log.warning("IDLE triggered but no emails found")
                     except Exception as e:
@@ -190,15 +239,16 @@ def start_email_monitor():
                     else:
                         log.error("Full reconnect failed, will retry after delay.")
                         time.sleep(RECONNECT_DELAY * consecutive_errors)
-   
+                # No fallback needed - IDLE will catch up when reconnection succeeds
+
     except KeyboardInterrupt:
         log.info("Stopping email monitor...")
     except Exception as e:
-        log.critical("Critical error in email monitoring occured: %s", e)
+        log.critical("Critical error in email monitor: %s", e)
     finally:
         try:
             if client:
                 client.logout()
         except Exception:
             pass
-        log.info("Email monitoring stopped")
+        log.info("Email monitor stopped")

@@ -179,17 +179,16 @@ class TokenManager:
         return config.USERNAME
     
     def force_refresh_tokens(self):
-        """Always use fresh OAuth flow on pipeline restart for completely fresh tokens"""
+        """Check for tokens but prefer fresh OAuth flow for account selection"""
         log.debug("Checking for existing tokens...")
         self.tokens = None  # Clear cached tokens
-        existing_tokens = self.load_tokens()  # Load from file
-        
-        if existing_tokens:
-            log.debug("forcing fresh OAuth for latest tokens")
-            return False  # Always return False to trigger fresh OAuth flow
+        fresh_tokens = self.load_tokens()  # Load from file
+        if fresh_tokens:
+            log.info("Found existing tokens, but will use fresh OAuth for account selection")
+            return False  # Return False to trigger OAuth flow
         else:
-            log.debug("No existing tokens found")
-            return False  # No tokens, trigger OAuth flow
+            log.debug("No tokens found")
+            return False
     
     def update_config_username(self, username):
         """Update the username in config.ini file dynamically"""
@@ -323,7 +322,7 @@ def create_oauth_server():
                         except Exception as endpoint_err:
                             log.warning(f"Unexpected error on attempt {attempt + 1}: {endpoint_err}")
                             
-                    if username:  # If we got a username, break out of endpoint loop
+                    if username:  
                         break
                 
                 if not username:
@@ -390,6 +389,32 @@ def test_imap_connection(access_token, username=None):
     except Exception as e:
         return f"Failed ({str(e)})"
 
+def get_gmail_service():
+    """
+    Returns an authenticated Gmail API service using stored OAuth tokens.
+    Handles token refresh if needed.
+    """
+    from googleapiclient.discovery import build
+    from google.oauth2.credentials import Credentials
+    import config
+
+    tokens = token_manager.load_tokens()
+    if not tokens:
+        raise Exception("No OAuth tokens found. Please run OAuth setup.")
+
+    creds = Credentials(
+        tokens['access_token'],
+        refresh_token=tokens.get('refresh_token'),
+        token_uri=config.TOKEN_URL,
+        client_id=config.CLIENT_ID,
+        client_secret=config.CLIENT_SECRET,
+        scopes=config.SCOPES.split(',') if isinstance(config.SCOPES, str) else config.SCOPES
+    )
+
+    service = build('gmail', 'v1', credentials=creds)
+    return service
+
+    
 def run_oauth_flow():
     """Run the OAuth flow to get initial tokens."""
     global oauth_complete
@@ -400,11 +425,12 @@ def run_oauth_flow():
     auth_params = {
         'client_id': config.CLIENT_ID,
         'response_type': 'code',
-        'redirect_uri': config.REDIRECT_URI,
+        'redirect_uri': config.REDIRECT_URI,    
         'scope': config.SCOPES,
         'access_type': 'offline',
         'prompt': 'consent'
     }
+    
     auth_url = f"{config.AUTH_URL}?{urlencode(auth_params)}"
     
     app = create_oauth_server()
@@ -415,18 +441,15 @@ def run_oauth_flow():
     server_thread.start()
     
     log.info("OAuth server started successfully!")    
-    log.info("Waiting for OAuth completion...")
+    log.info("Waiting for OAuth completion (no timeout - active until login)...")
     
-    timeout = 900  
-    start_time = time.time()
-    
-    while not oauth_complete and (time.time() - start_time) < timeout:
+    # Wait indefinitely until OAuth is complete (no timeout)
+    while not oauth_complete:
         time.sleep(1)
     
     if oauth_complete:
         log.info("OAuth authentication successful!")
-        
-        # CRITICAL: Force token manager to reload fresh tokens immediately
+
         token_manager.tokens = None  # Clear any cached tokens
         fresh_tokens = token_manager.load_tokens()  # Load fresh tokens from file
         if fresh_tokens:
@@ -434,6 +457,7 @@ def run_oauth_flow():
             # Test the fresh tokens immediately
             try:
                 access_token = token_manager.get_valid_access_token()
+                log.info("Ready to monitor emails")
             except Exception as e:
                 log.error(f"Token validation failed: {e}")
                 return False
@@ -443,5 +467,5 @@ def run_oauth_flow():
             
         return True
     else:
-        log.error("OAuth timed out. Please try again.")
+        log.error("OAuth authentication failed.")
         return False
