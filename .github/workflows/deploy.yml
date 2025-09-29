@@ -1,0 +1,53 @@
+name: Matangi-AI-Automation
+
+on:
+  push:
+    branches:
+      - Email-Classifier
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: Email-Classifier   # checkout desired branch
+
+      # Step 2: Setup SSH with private key
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.AZURE_VM_SSH_KEY }}
+
+      # Step 3: Sync code to Azure VM (keep existing files)
+      - name: Copy code to Azure VM
+        run: |
+          rsync -avz \
+          -e "ssh -o StrictHostKeyChecking=no" \
+          ./ ${{ secrets.AZURE_VM_USER }}@${{ secrets.AZURE_VM_IP }}:/home/${{ secrets.AZURE_VM_USER }}/Matangi-AI-Automation
+
+      # Step 4: Install dependencies in existing venv & restart service
+      - name: Install dependencies & restart service
+        run: |
+          ssh -o StrictHostKeyChecking=no \
+          ${{ secrets.AZURE_VM_USER }}@${{ secrets.AZURE_VM_IP }} << 'EOF'
+            set -e
+            cd /home/${USER}/Matangi-AI-Automation
+
+            echo "Activating existing venv..."
+            source /home/${USER}/matangi-email-classification/bin/activate
+
+            echo "Installing dependencies..."
+            pip install --upgrade pip
+            if [ -f "requirements.txt" ]; then
+              pip install -r requirements.txt
+            fi
+
+            echo "Restarting matangi-email.service..."
+            sudo systemctl daemon-reload
+            sudo systemctl restart matangi-email.service
+            sudo systemctl status matangi-email.service --no-pager
+          EOF
