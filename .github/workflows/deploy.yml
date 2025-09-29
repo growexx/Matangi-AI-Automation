@@ -3,7 +3,13 @@ name: Matangi-AI-Automation
 on:
   push:
     branches:
-      - Email-Classifier
+      - Email-Classifier   # Auto-deploy on push/merge to this branch
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to deploy'
+        required: true
+        default: 'Email-Classifier'
 
 jobs:
   deploy:
@@ -14,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: Email-Classifier   # checkout desired branch
+          ref: ${{ github.event.inputs.branch || github.ref_name }}
 
       # Step 2: Setup SSH with private key
       - name: Setup SSH
@@ -49,5 +55,13 @@ jobs:
             echo "Restarting matangi-email.service..."
             sudo systemctl daemon-reload
             sudo systemctl restart matangi-email.service
-            sudo systemctl status matangi-email.service --no-pager
+
+            # Check if service is active
+            if ! sudo systemctl is-active --quiet matangi-email.service; then
+              echo "ERROR: matangi-email.service failed to start!"
+              sudo journalctl -u matangi-email.service --no-pager -n 50
+              exit 1
+            fi
+
+            echo "Service is running successfully"
           EOF
