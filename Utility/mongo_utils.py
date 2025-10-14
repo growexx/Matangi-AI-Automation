@@ -4,6 +4,7 @@ from email.header import decode_header, make_header
 from pymongo import MongoClient
 from logger.logger_setup import logger as log
 import config
+from typing import Optional
 
 def clean_thread_subject(subject):
     """
@@ -19,7 +20,6 @@ def clean_thread_subject(subject):
         return "No Subject"
     
     # Remove Re:, Fwd:, RE:, FW:, AW:, SV: and similar prefixes (case insensitive)
-    # Also handle multiple nested prefixes like "Re: Re: Fwd:"
     cleaned = re.sub(r'^(RE?|FWD?|FW|AW|SV|ANTW):\s*', '', subject.strip(), flags=re.IGNORECASE)
     
     # Keep cleaning until no more prefixes found (handles nested cases)
@@ -166,8 +166,6 @@ def fetch_thread_emails_from_imap(client, thread_id: str, limit: int = 10):
         sorted_messages = sorted(messages, key=lambda x: x.get('date', datetime.datetime.min))
         recent_messages = sorted_messages[-limit:] if len(sorted_messages) > limit else sorted_messages
         
-        log.info(f"Fetching {len(recent_messages)} emails from IMAP for thread {thread_id}")
-        
         thread_data = {
             "thread_id": thread_id,
             "total_emails_in_thread": len(messages),
@@ -278,7 +276,8 @@ def fetch_thread_emails_from_imap(client, thread_id: str, limit: int = 10):
                         "date": msg_meta.get("date", "").isoformat() if hasattr(msg_meta.get("date", ""), 'isoformat') else str(msg_meta.get("date", "")),
                         "from": from_name,
                         "folder": folder,
-                        "body": body_content.strip()
+                        "body": body_content.strip(),
+                        "message_id": msg_meta.get("message_id", "")  # Preserve for threading
                     }
                     thread_data["Mails"].append(mail_data)
                     
@@ -298,10 +297,11 @@ def fetch_thread_emails_from_imap(client, thread_id: str, limit: int = 10):
         # Add subject to thread_data (extracted from first email)
         thread_data["subject"] = extracted_subject
         
-        # Minimal summary logging (2-3 lines total)
-        log.info(f"IMAP fetch complete: {emails_fetched} emails retrieved, {emails_cleaned} cleaned")
+        # Log summary
+        log.info(f"Fetching {emails_fetched} emails from IMAP for thread {thread_id}")
+        log.info(f"IMAP fetch complete: {emails_fetched} emails retrieved, {emails_cleaned} cleaned") 
         if emails_cleaned > 0:
-            log.debug(f"Body cleaning removed quotes/signatures from {emails_cleaned} emails")
+            log.info(f"Body cleaning removed quotes/signatures from {emails_cleaned} emails")
             
         return thread_data
     except Exception as e:
@@ -453,14 +453,54 @@ def atomic_upsert_thread(col, thread_id, uid, msg, folder):
     res = col.update_one(filter_q, update_q, upsert=True)
     return res
 
+def atomic_upsert_thread_with_user_id(col, thread_id, uid, msg, folder, user_id):
+    """Multi-tenant atomic upsert with user_id for data integrity."""
+    now = datetime.datetime.now()
+    uid_int = int(uid)
+    msg_id = msg.get('Message-ID', '')
+    msg_doc = _message_to_doc(uid, msg, folder)
+    
+    # Add user_id to message document for complete isolation
+    msg_doc['user_id'] = user_id
 
-def get_thread_from_mongo(thread_id: str, limit: int = 5):
+    # Filter by thread_id AND user_id for complete data integrity
+    filter_q = {
+        "thread_id": thread_id, 
+        "user_id": user_id,
+        "uids": {"$ne": uid_int}
+    }
+    
+    update_q = {
+        "$setOnInsert": {
+            "thread_id": thread_id,
+            "user_id": user_id,  # Ensure user_id is set at thread level
+            "created_at": now,
+        },
+        "$set": {
+            "last_updated": now,
+        },
+        "$push": {
+            "messages": {
+                "$each": [msg_doc],
+                "$sort": {"date": 1}
+            }
+        },
+        "$addToSet": {
+            "uids": uid_int,
+            "message_ids": msg_id
+        }
+    }
+    res = col.update_one(filter_q, update_q, upsert=True)
+    return res
+
+
+def get_thread_from_mongo(thread_id: str, limit: int = 10):
     """
 
     
     Args:
         thread_id: Thread ID to fetch
-        limit: Number of recent emails to return (default: 5)
+        limit: Number of recent emails to return (default: 10)
         
     Returns:
         Thread data with last N emails or None if not found

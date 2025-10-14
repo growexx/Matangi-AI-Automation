@@ -28,8 +28,8 @@ SCOPES = config.get('oauth', 'scopes')
 
 # IMAP CONFIG
 IMAP_SERVER = config.get('imap', 'server')
-USERNAME = config.get('imap', 'username')
 MAILBOX = config.get('imap', 'mailbox')
+
 
 # IDLE tuning
 IDLE_TIMEOUT = int(config.get('monitor', 'idle_timeout', fallback='900'))
@@ -40,3 +40,4 @@ RECONNECT_DELAY = int(config.get('monitor', 'reconnect_delay', fallback='10'))
 MONGO_URI = config.get('mongo', 'uri')
 MONGO_DB = config.get('mongo', 'db')
 MONGO_COL = config.get('mongo', 'collection')
+MONGO_USER_COL = config.get('mongo', 'user_collection')

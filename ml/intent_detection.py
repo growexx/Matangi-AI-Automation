@@ -2,13 +2,11 @@ import os
 import sys
 import json
 from typing import Dict, Any, Optional
-
-# Add project root to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from Utility.llm_utils import LLMExecutor
 from Utility.ml_text_utils import format_thread_for_llm
 from logger.logger_setup import logger as log
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 def detect_intent(thread_data: Dict[str, Any], provider: str = "azure_openai") -> Dict[str, Any]:
     """
@@ -40,7 +38,7 @@ def detect_intent(thread_data: Dict[str, Any], provider: str = "azure_openai") -
             log.warning("Most recent email has no body content")
             return {"intent": "Unknown", "confidence": 0.0, "error": "Empty email body"}
         
-        # Get subject for better context
+        # Get subject 
         subject = thread_data.get("subject", "No Subject")
         
         # Create the prompt

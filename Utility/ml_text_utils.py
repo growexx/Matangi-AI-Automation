@@ -1,13 +1,11 @@
 import os
 import sys
 from typing import Dict, List, Any, Optional
-
-# Add project root to path
+from logger.logger_setup import logger as log
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from logger.logger_setup import logger as log
 
-def format_thread_for_llm(thread_data: Dict[str, Any], max_emails: int = 5) -> str:
+def format_thread_for_llm(thread_data: Dict[str, Any], max_emails: int = 10) -> str:
     """
     Format thread data for LLM processing, using only the most recent emails.
     
@@ -38,7 +36,7 @@ def format_thread_for_llm(thread_data: Dict[str, Any], max_emails: int = 5) -> s
         # Extract subject
         subject = thread_data.get("subject", "No Subject")
         formatted_text = f"Subject: {subject}\n\n"
-        
+    
         # Get emails
         emails = thread_data.get("Mails", [])
         total_emails = len(emails)
@@ -47,7 +45,7 @@ def format_thread_for_llm(thread_data: Dict[str, Any], max_emails: int = 5) -> s
             log.warning("No emails found in thread data")
             return f"Subject: {subject}\n\nNo email content available."
         
-        # Sort emails by date if possible (ensure most recent are last)
+        # Sort emails by date
         # The emails should already be in chronological order based on the thread_fetcher.py code
         
         # Take only the most recent max_emails

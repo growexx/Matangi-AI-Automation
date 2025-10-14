@@ -4,17 +4,14 @@ import time
 import json
 import logging
 import configparser
-import requests
+import requests            
 import boto3
 from botocore.config import Config
 from typing import Dict, List, Any, Optional, Union, Callable
-
-# Add project root to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-# Import config values directly
 from config import *
 from logger.logger_setup import logger as log
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 class LLMExecutor:
     """Utility class for executing LLM calls with retries and error handling."""

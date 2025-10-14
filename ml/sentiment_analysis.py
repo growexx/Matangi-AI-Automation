@@ -2,13 +2,10 @@ import os
 import sys
 import json
 from typing import Dict, Any, Optional
-
-# Add project root to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from Utility.llm_utils import LLMExecutor
 from Utility.ml_text_utils import format_thread_for_llm
 from logger.logger_setup import logger as log
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def analyze_sentiment(thread_data: Dict[str, Any], provider: str = "azure_openai") -> Dict[str, Any]:
     """
@@ -63,9 +60,12 @@ def analyze_sentiment(thread_data: Dict[str, Any], provider: str = "azure_openai
         - Look for emotional tone, urgency indicators, and satisfaction/dissatisfaction signals
 
 
-        CRITICAL: Focus ONLY on the most recent email with folder="INBOX" (received email)
+        CRITICAL: 
+        -Focus ONLY on the most recent email with folder="INBOX" (received email)
         - Ignore emails from "[Gmail]/Sent Mail" folder for sentiment analysis 
         - Use Sent Mail emails ONLY as context to understand the conversation flow
+        - Complaint override rule: If the most recent INBOX email contains a complaint: even if written in an polite/neutral/factual tone - classify it as Negative or Higher Negative 
+
         
         {formatted_thread}
         

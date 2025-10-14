@@ -2,11 +2,8 @@ import json
 import sys
 import os
 from typing import Dict, Any
-
-# Add project root to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from logger.logger_setup import logger as log
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def convert_thread_to_json(thread_data: Dict[str, Any], thread_id: str) -> Dict[str, Any]:

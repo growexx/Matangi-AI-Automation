@@ -1,0 +1,258 @@
+2025-10-14 17:26:43 IST - email_monitor_logger - DEBUG - UserDetails collection indexes created
+2025-10-14 17:27:06 IST - email_monitor_logger - DEBUG - UserDetails collection indexes created
+2025-10-14 17:27:08 IST - email_monitor_logger - INFO - Multi-tenant OAuth server started successfully!
+2025-10-14 17:27:08 IST - email_monitor_logger - INFO - Users can authenticate at: http://localhost:5000
+2025-10-14 17:27:22 IST - email_monitor_logger - INFO - OAuth callback received
+2025-10-14 17:27:23 IST - email_monitor_logger - DEBUG - Trying userinfo endpoint: https://www.googleapis.com/oauth2/v2/userinfo (attempt 1)
+2025-10-14 17:27:23 IST - email_monitor_logger - INFO - User info extracted - Email: yashpandya21@gnu.ac.in, Name: YASH PANDYA
+2025-10-14 17:27:23 IST - email_monitor_logger - INFO - New user added: yashpandya21@gnu.ac.in (Sequential ID: 1)
+2025-10-14 17:27:23 IST - email_monitor_logger - INFO - User yashpandya21@gnu.ac.in added to multi-tenant system (Sequential ID: 1)
+2025-10-14 17:27:27 IST - email_monitor_logger - DEBUG - IMAP connection test successful for yashpandya21@gnu.ac.in
+2025-10-14 17:29:14 IST - email_monitor_logger - DEBUG - Processing UID: 1292
+2025-10-14 17:29:17 IST - email_monitor_logger - INFO - Backfilling 5 missing emails for thread 1845957615311075223
+2025-10-14 17:29:32 IST - email_monitor_logger - INFO - Fetching 6 emails from IMAP for thread <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>
+2025-10-14 17:29:32 IST - email_monitor_logger - INFO - IMAP fetch complete: 6 emails retrieved, 5 cleaned
+2025-10-14 17:29:32 IST - email_monitor_logger - INFO - Body cleaning removed quotes/signatures from 5 emails
+2025-10-14 17:29:32 IST - email_monitor_logger - INFO - Final JSON: {
+  "thread_id": "<CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>",
+  "subject": "Hi",
+  "total_emails_in_thread": 6,
+  "emails_fetched": 6,
+  "Mails": [
+    {
+      "Email": 1,
+      "date": "2025-10-14T17:15:53",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Hi",
+      "message_id": "<CADJ3zVNRyhsA3Sy57tfzJeLd+C=G4NbjBMQa8etwd9nBOecyyw@mail.gmail.com>"
+    },
+    {
+      "Email": 2,
+      "date": "2025-10-14T17:17:25",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "ok",
+      "message_id": "<CADJ3zVNz26AaeU5rWzytg_czBvGm82euiJL9nXCEp1BJMofM5Q@mail.gmail.com>"
+    },
+    {
+      "Email": 3,
+      "date": "2025-10-14T17:20:39",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Thanks",
+      "message_id": "<CADJ3zVMN_i15-D=m+u0UqQDefGSNdO9QEmyb8CfGPEV5nUBhZg@mail.gmail.com>"
+    },
+    {
+      "Email": 4,
+      "date": "2025-10-14T17:27:41",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Received",
+      "message_id": "<CADJ3zVN8sK1rKR7Q7LSjG-ZCX=vzxaLw+vkb9GZfkmBdO0GsSA@mail.gmail.com>"
+    },
+    {
+      "Email": 5,
+      "date": "2025-10-14T17:28:50",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "done",
+      "message_id": "<CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>"
+    },
+    {
+      "Email": 6,
+      "date": "2025-10-14T17:28:57",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "thanks",
+      "message_id": "<CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>"
+    }
+  ]
+}
+2025-10-14 17:29:32 IST - email_monitor_logger - INFO - Processing thread <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>
+2025-10-14 17:29:32 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:29:32 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:29:34 IST - email_monitor_logger - INFO - Thread <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>: Acknowledgement, Positive, 2.06s
+2025-10-14 17:29:34 IST - email_monitor_logger - INFO - Found message <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com> in thread <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>
+2025-10-14 17:29:34 IST - email_monitor_logger - DEBUG - Searching Gmail with query: rfc822msgid:CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com
+2025-10-14 17:29:36 IST - email_monitor_logger - INFO - Found Gmail message 199e29691ac0dbd2 in thread 199e28abbb0b3797
+2025-10-14 17:29:36 IST - email_monitor_logger - INFO - Using Gmail thread ID: 199e28abbb0b3797, Subject: None
+2025-10-14 17:29:36 IST - email_monitor_logger - INFO - Processing thread 199e28abbb0b3797 (None): applying labels ['Acknowledgement', 'Positive']
+2025-10-14 17:29:37 IST - email_monitor_logger - DEBUG - Thread 199e28abbb0b3797 has 4 system labels, 2 custom labels
+2025-10-14 17:29:37 IST - email_monitor_logger - INFO - Removing 2 old custom labels from thread 199e28abbb0b3797: ['Acknowledgement', 'Positive']
+2025-10-14 17:29:40 IST - email_monitor_logger - INFO - Applied 2 labels to thread 199e28abbb0b3797
+2025-10-14 17:29:40 IST - email_monitor_logger - INFO - Successfully updated thread 199e28abbb0b3797: removed 2 old labels, applied 2 new labels
+2025-10-14 17:29:40 IST - email_monitor_logger - ERROR - ML pipeline failed for thread <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>: cannot import name 'process_thread_reply' from 'reply_generation' (unknown location)
+2025-10-14 17:29:41 IST - email_monitor_logger - DEBUG - Processing UID: 1293
+2025-10-14 17:29:44 IST - email_monitor_logger - INFO - Backfilling 5 missing emails for thread 1845957615311075223
+2025-10-14 17:29:58 IST - email_monitor_logger - INFO - Fetching 6 emails from IMAP for thread <CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>
+2025-10-14 17:29:58 IST - email_monitor_logger - INFO - IMAP fetch complete: 6 emails retrieved, 5 cleaned
+2025-10-14 17:29:58 IST - email_monitor_logger - INFO - Body cleaning removed quotes/signatures from 5 emails
+2025-10-14 17:29:58 IST - email_monitor_logger - INFO - Final JSON: {
+  "thread_id": "<CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>",
+  "subject": "Hi",
+  "total_emails_in_thread": 6,
+  "emails_fetched": 6,
+  "Mails": [
+    {
+      "Email": 1,
+      "date": "2025-10-14T17:15:53",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Hi",
+      "message_id": "<CADJ3zVNRyhsA3Sy57tfzJeLd+C=G4NbjBMQa8etwd9nBOecyyw@mail.gmail.com>"
+    },
+    {
+      "Email": 2,
+      "date": "2025-10-14T17:17:25",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "ok",
+      "message_id": "<CADJ3zVNz26AaeU5rWzytg_czBvGm82euiJL9nXCEp1BJMofM5Q@mail.gmail.com>"
+    },
+    {
+      "Email": 3,
+      "date": "2025-10-14T17:20:39",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Thanks",
+      "message_id": "<CADJ3zVMN_i15-D=m+u0UqQDefGSNdO9QEmyb8CfGPEV5nUBhZg@mail.gmail.com>"
+    },
+    {
+      "Email": 4,
+      "date": "2025-10-14T17:27:41",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Received",
+      "message_id": "<CADJ3zVN8sK1rKR7Q7LSjG-ZCX=vzxaLw+vkb9GZfkmBdO0GsSA@mail.gmail.com>"
+    },
+    {
+      "Email": 5,
+      "date": "2025-10-14T17:28:50",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "done",
+      "message_id": "<CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>"
+    },
+    {
+      "Email": 6,
+      "date": "2025-10-14T17:28:57",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "thanks",
+      "message_id": "<CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>"
+    }
+  ]
+}
+2025-10-14 17:29:58 IST - email_monitor_logger - INFO - Processing thread <CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>
+2025-10-14 17:29:58 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:29:58 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:29:59 IST - email_monitor_logger - INFO - Thread <CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>: Acknowledgement, Positive, 1.85s
+2025-10-14 17:29:59 IST - email_monitor_logger - INFO - Found message <CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com> in thread <CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>
+2025-10-14 17:30:00 IST - email_monitor_logger - DEBUG - Searching Gmail with query: rfc822msgid:CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com
+2025-10-14 17:30:01 IST - email_monitor_logger - INFO - Found Gmail message 199e296aea40a794 in thread 199e28abbb0b3797
+2025-10-14 17:30:01 IST - email_monitor_logger - INFO - Using Gmail thread ID: 199e28abbb0b3797, Subject: None
+2025-10-14 17:30:01 IST - email_monitor_logger - INFO - Processing thread 199e28abbb0b3797 (None): applying labels ['Acknowledgement', 'Positive']
+2025-10-14 17:30:03 IST - email_monitor_logger - DEBUG - Thread 199e28abbb0b3797 has 4 system labels, 2 custom labels
+2025-10-14 17:30:03 IST - email_monitor_logger - INFO - Removing 2 old custom labels from thread 199e28abbb0b3797: ['Acknowledgement', 'Positive']
+2025-10-14 17:30:06 IST - email_monitor_logger - INFO - Applied 2 labels to thread 199e28abbb0b3797
+2025-10-14 17:30:06 IST - email_monitor_logger - INFO - Successfully updated thread 199e28abbb0b3797: removed 2 old labels, applied 2 new labels
+2025-10-14 17:30:06 IST - email_monitor_logger - ERROR - ML pipeline failed for thread <CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>: cannot import name 'process_thread_reply' from 'reply_generation' (unknown location)
+2025-10-14 17:35:23 IST - email_monitor_logger - DEBUG - UserDetails collection indexes created
+2025-10-14 17:35:25 IST - email_monitor_logger - INFO - Multi-tenant OAuth server started successfully!
+2025-10-14 17:35:25 IST - email_monitor_logger - INFO - Users can authenticate at: http://localhost:5000
+2025-10-14 17:35:39 IST - email_monitor_logger - INFO - OAuth callback received
+2025-10-14 17:35:40 IST - email_monitor_logger - DEBUG - Trying userinfo endpoint: https://www.googleapis.com/oauth2/v2/userinfo (attempt 1)
+2025-10-14 17:35:40 IST - email_monitor_logger - INFO - User info extracted - Email: yashpandya21@gnu.ac.in, Name: YASH PANDYA
+2025-10-14 17:35:40 IST - email_monitor_logger - INFO - New user added: yashpandya21@gnu.ac.in (Sequential ID: 1)
+2025-10-14 17:35:40 IST - email_monitor_logger - INFO - User yashpandya21@gnu.ac.in added to multi-tenant system (Sequential ID: 1)
+2025-10-14 17:35:43 IST - email_monitor_logger - DEBUG - IMAP connection test successful for yashpandya21@gnu.ac.in
+2025-10-14 17:37:32 IST - email_monitor_logger - DEBUG - Processing UID: 1294
+2025-10-14 17:37:35 IST - email_monitor_logger - INFO - Backfilling 6 missing emails for thread 1845957615311075223
+2025-10-14 17:37:53 IST - email_monitor_logger - INFO - Fetching 7 emails from IMAP for thread <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>
+2025-10-14 17:37:53 IST - email_monitor_logger - INFO - IMAP fetch complete: 7 emails retrieved, 6 cleaned
+2025-10-14 17:37:53 IST - email_monitor_logger - INFO - Body cleaning removed quotes/signatures from 6 emails
+2025-10-14 17:37:53 IST - email_monitor_logger - INFO - Final JSON: {
+  "thread_id": "<CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>",
+  "subject": "Hi",
+  "total_emails_in_thread": 7,
+  "emails_fetched": 7,
+  "Mails": [
+    {
+      "Email": 1,
+      "date": "2025-10-14T17:15:53",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Hi",
+      "message_id": "<CADJ3zVNRyhsA3Sy57tfzJeLd+C=G4NbjBMQa8etwd9nBOecyyw@mail.gmail.com>"
+    },
+    {
+      "Email": 2,
+      "date": "2025-10-14T17:17:25",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "ok",
+      "message_id": "<CADJ3zVNz26AaeU5rWzytg_czBvGm82euiJL9nXCEp1BJMofM5Q@mail.gmail.com>"
+    },
+    {
+      "Email": 3,
+      "date": "2025-10-14T17:20:39",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Thanks",
+      "message_id": "<CADJ3zVMN_i15-D=m+u0UqQDefGSNdO9QEmyb8CfGPEV5nUBhZg@mail.gmail.com>"
+    },
+    {
+      "Email": 4,
+      "date": "2025-10-14T17:27:41",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Received",
+      "message_id": "<CADJ3zVN8sK1rKR7Q7LSjG-ZCX=vzxaLw+vkb9GZfkmBdO0GsSA@mail.gmail.com>"
+    },
+    {
+      "Email": 5,
+      "date": "2025-10-14T17:28:50",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "done",
+      "message_id": "<CADJ3zVPC6KbYaacPpueHWNqJozfSgCMi+Em3RF7GbL1vEah6aQ@mail.gmail.com>"
+    },
+    {
+      "Email": 6,
+      "date": "2025-10-14T17:28:57",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "thanks",
+      "message_id": "<CADJ3zVPgFpHr824XHRZu2gmfLrZc-OxLx7z-SrKf4jvFLHSL1A@mail.gmail.com>"
+    },
+    {
+      "Email": 7,
+      "date": "2025-10-14T17:36:49",
+      "from": "Yash Pandya",
+      "folder": "INBOX",
+      "body": "Done",
+      "message_id": "<CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>"
+    }
+  ]
+}
+2025-10-14 17:37:53 IST - email_monitor_logger - INFO - Processing thread <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>
+2025-10-14 17:37:53 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:37:53 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:37:55 IST - email_monitor_logger - INFO - Thread <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>: Acknowledgement, Positive, 2.05s
+2025-10-14 17:37:55 IST - email_monitor_logger - INFO - Found message <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com> in thread <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>
+2025-10-14 17:37:55 IST - email_monitor_logger - DEBUG - Searching Gmail with query: rfc822msgid:CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com
+2025-10-14 17:37:57 IST - email_monitor_logger - INFO - Found Gmail message 199e29de5460674c in thread 199e28abbb0b3797
+2025-10-14 17:37:57 IST - email_monitor_logger - INFO - Using Gmail thread ID: 199e28abbb0b3797, Subject: None
+2025-10-14 17:37:57 IST - email_monitor_logger - INFO - Processing thread 199e28abbb0b3797 (None): applying labels ['Acknowledgement', 'Positive']
+2025-10-14 17:37:58 IST - email_monitor_logger - DEBUG - Thread 199e28abbb0b3797 has 4 system labels, 2 custom labels
+2025-10-14 17:37:58 IST - email_monitor_logger - INFO - Removing 2 old custom labels from thread 199e28abbb0b3797: ['Acknowledgement', 'Positive']
+2025-10-14 17:38:01 IST - email_monitor_logger - INFO - Applied 2 labels to thread 199e28abbb0b3797
+2025-10-14 17:38:01 IST - email_monitor_logger - INFO - Successfully updated thread 199e28abbb0b3797: removed 2 old labels, applied 2 new labels
+2025-10-14 17:38:01 IST - email_monitor_logger - INFO - Generating email reply for thread <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com>
+2025-10-14 17:38:01 IST - email_monitor_logger - DEBUG - Calling Azure OpenAI: gpt-4o-mini
+2025-10-14 17:38:04 IST - email_monitor_logger - DEBUG - Searching Gmail with query: rfc822msgid:CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com
+2025-10-14 17:38:06 IST - email_monitor_logger - INFO - Found Gmail message 199e29de5460674c in thread 199e28abbb0b3797
+2025-10-14 17:38:06 IST - email_monitor_logger - INFO - Found Gmail thread ID for draft: 199e28abbb0b3797
+2025-10-14 17:38:06 IST - email_monitor_logger - INFO - Gmail draft created successfully for yashpandya21@gnu.ac.in: Draft ID r-347093080283961230
+2025-10-14 17:38:06 IST - email_monitor_logger - INFO - Email reply generated for thread <CADJ3zVPLZcrn=58DN3GS3Ez09-0RbW8yfJypDS=HBGdC5RkK0Q@mail.gmail.com> and saved to Gmail Drafts

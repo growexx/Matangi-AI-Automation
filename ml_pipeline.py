@@ -71,5 +71,5 @@ def process_thread(thread_data: Dict[str, Any], provider: str = "azure_openai") 
         "processing_time": time.time() - start_time
     }
     
-    log.info(f"Thread {result['thread_id']} analyzed: Intent={intent}, Sentiment={sentiment}, Time={result['processing_time']:.2f}s")
+    log.info(f"Thread {result['thread_id']}: {intent}, {sentiment}, {result['processing_time']:.2f}s")
     return result
