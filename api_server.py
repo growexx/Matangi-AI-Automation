@@ -77,8 +77,8 @@ async def root():
         "status": "operational",
         "endpoints": {
             "health": "/health",
-            "unreplied_emails": "/api/unreplied-emails",
-            "aging_report": "/api/aging-report",
+            "unreplied_emails": "/unreplied-emails",
+            "aging_report": "/aging-report",
         }
     }
 
@@ -91,7 +91,7 @@ async def health_check():
         "service": "Gmail Unreplied Emails API"
     }
 
-@app.get("/api/unreplied-emails", tags=["Data"])
+@app.get("/unreplied-emails", tags=["Data"])
 async def get_unreplied_emails():
     """
     Get Intent Analysis (Dashboard 1)
@@ -105,7 +105,7 @@ async def get_unreplied_emails():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
-@app.get("/api/aging-report", tags=["Data"])
+@app.get("/aging-report", tags=["Data"])
 async def get_aging_report():
     """
     Get Aging Report (Dashboard 2)
