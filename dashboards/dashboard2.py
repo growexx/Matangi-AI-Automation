@@ -100,8 +100,6 @@ class AgingReportProcessor:
     def store_user_aging_analytics_mongodb(self, user_email, full_name, bucketed_emails):
         """Store user aging analytics data as single document per user with retry"""
         def _store_operation():
-            user_id = self.get_next_user_sequence_id()
-            
             # Initialize time buckets structure
             time_buckets = {
                 self.BUCKET_24H_TO_48H: [],
@@ -115,6 +113,10 @@ class AgingReportProcessor:
                 if bucket_name in time_buckets:
                     time_buckets[bucket_name] = emails
             
+            # Check if user already exists to preserve user_id
+            existing_user = self.dashboard2_collection.find_one({"user_email": user_email})
+            user_id = existing_user.get("user_id") if existing_user else self.get_next_user_sequence_id()
+            
             document = {
                 "user_id": user_id,
                 "user_email": user_email,
@@ -122,19 +124,21 @@ class AgingReportProcessor:
                 "time_buckets": time_buckets
             }
             
-            self.dashboard2_collection.insert_one(document)
-            logger.info(f"Stored aging analytics for {user_email} with user_id {user_id}")
+            # Use upsert to update existing or insert new
+            self.dashboard2_collection.update_one(
+                {"user_email": user_email},
+                {"$set": document},
+                upsert=True
+            )
+            logger.info(f"Stored/updated aging analytics for {user_email} with user_id {user_id}")
             return True
         
         return retry_service.mongodb_retry(_store_operation, operation_name=f"MongoDB aging store for {user_email}")
     
     def clear_user_data_from_mongodb(self, user_email):
-        """Clear existing data for a user before storing new data"""
-        try:
-            result = self.dashboard2_collection.delete_many({"user_email": user_email})
-            logger.info(f"Cleared {result.deleted_count} existing time bucket records for {user_email}")
-        except Exception as e:
-            logger.error(f"Error clearing user data from MongoDB: {e}")
+        """No longer needed - using upsert instead"""
+        # Kept for backward compatibility but does nothing
+        pass
 
     def load_dashboard1_data(self):
         """Load data from dashboard1.py output with retry"""
