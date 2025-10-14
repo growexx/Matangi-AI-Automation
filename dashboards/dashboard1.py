@@ -86,7 +86,6 @@ class GmailUnrepliedChecker:
         """Fetch all active users from MongoDB"""
         try:
             users = list(self.user_collection.find({
-                "monitoring_active": True,
                 "oauth_tokens": {"$exists": True}
             }))
             logger.info(f"Found {len(users)} active users in database")
@@ -350,8 +349,6 @@ class GmailUnrepliedChecker:
     def store_user_intent_analytics_mongodb(self, user_email, full_name, categorized_emails):
         """Store user intent analytics data as single document per user with retry"""
         def _store_operation():
-            user_id = self.get_next_user_sequence_id()
-            
             # Initialize categories structure with all target labels
             categories = {}
             for label in self.TARGET_LABELS:
@@ -370,6 +367,10 @@ class GmailUnrepliedChecker:
                         }
                         categories[category].append(email_info)
             
+            # Check if user already exists to preserve user_id
+            existing_user = self.dashboard1_collection.find_one({"user_email": user_email})
+            user_id = existing_user.get("user_id") if existing_user else self.get_next_user_sequence_id()
+            
             document = {
                 "user_id": user_id,
                 "user_email": user_email,
@@ -377,19 +378,21 @@ class GmailUnrepliedChecker:
                 "categories": categories
             }
             
-            self.dashboard1_collection.insert_one(document)
-            logger.info(f"Stored intent analytics for {user_email} with user_id {user_id}")
+            # Use upsert to update existing or insert new
+            self.dashboard1_collection.update_one(
+                {"user_email": user_email},
+                {"$set": document},
+                upsert=True
+            )
+            logger.info(f"Stored/updated intent analytics for {user_email} with user_id {user_id}")
             return True
         
         return retry_service.mongodb_retry(_store_operation, operation_name=f"MongoDB store for {user_email}")
     
     def clear_user_data_from_mongodb(self, user_email):
-        """Clear existing data for a user before storing new data"""
-        try:
-            result = self.dashboard1_collection.delete_many({"user_email": user_email})
-            logger.info(f"Cleared {result.deleted_count} existing records for {user_email}")
-        except Exception as e:
-            logger.error(f"Error clearing user data from MongoDB: {e}")
+        """No longer needed - using upsert instead"""
+        # Kept for backward compatibility but does nothing
+        pass
 
     def calculate_hours_difference(self, inbox_timestamp, sent_timestamp):
         """Calculate hours difference between sent and inbox"""
