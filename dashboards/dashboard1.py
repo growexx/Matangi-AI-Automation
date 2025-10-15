@@ -11,11 +11,10 @@ from google.oauth2.credentials import Credentials
 import pytz
 from pymongo import MongoClient
 import logging
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.retry_framework import retry_service
 
-# Module-level logger
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 logger = logging.getLogger("gmail_unreplied")
 
 class GmailUnrepliedChecker:
