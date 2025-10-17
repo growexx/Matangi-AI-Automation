@@ -11,10 +11,12 @@ from google.oauth2.credentials import Credentials
 import pytz
 from pymongo import MongoClient
 import logging
-from utils.retry_framework import retry_service
+from collections import OrderedDict
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.retry_framework import retry_service
 
+# Module-level logger
 logger = logging.getLogger("gmail_unreplied")
 
 class GmailUnrepliedChecker:
@@ -46,6 +48,7 @@ class GmailUnrepliedChecker:
         # Dashboard1 specific settings
         self.INTENT_FIELD_NAME = self.config.get('dashboard1', 'intent_field_name')
         self.UNREPLIED_EMAILS_FIELD_NAME = self.config.get('dashboard1', 'unreplied_emails_field_name')
+        self.MIN_UNREPLIED_HOURS = self.config.getint('dashboard1', 'min_unreplied_hours')
         
         # Initialize IST timezone
         self.ist_timezone = pytz.timezone(self.TIMEZONE)
@@ -56,17 +59,11 @@ class GmailUnrepliedChecker:
         self.analytics_db = self.mongo_client[self.ANALYTICS_DATABASE]
         self.dashboard1_collection = self.analytics_db[self.DASHBOARD1_COLLECTION]
         
-        # File paths - programmatically set to data/ and logs/ folders  
+        # File paths for logging
         log_filename = self.config.get('settings', 'log_filename')
         self.LOG_FILENAME = os.path.join('logs', log_filename)
         
-        summary_file = self.config.get('dashboard1', 'intent_summary_file')
-        detail_file = self.config.get('dashboard1', 'detailed_json_file')
-        self.SUMMARY_JSON_FILE = os.path.join('data', 'dashboard1', summary_file)
-        self.DETAILED_JSON_FILE = os.path.join('data', 'dashboard1', detail_file)
-        
-        # Ensure required directories exist
-        os.makedirs("data/dashboard1", exist_ok=True)
+        # Ensure logs directory exists
         os.makedirs("logs", exist_ok=True)
         
         # Setup logging
@@ -345,38 +342,26 @@ class GmailUnrepliedChecker:
             logger.error(f"Error getting next sequence ID: {e}")
             return 1
 
-    def store_user_intent_analytics_mongodb(self, user_email, full_name, categorized_emails):
-        """Store user intent analytics data as single document per user with retry"""
+    def store_user_intent_analytics_mongodb(self, user_email, full_name, intent_array_with_emails):
+        """Store user intent analytics data with consolidated structure in MongoDB"""
         def _store_operation():
-            # Initialize categories structure with all target labels
-            categories = {}
-            for label in self.TARGET_LABELS:
-                categories[label] = []
-            
-            # Populate categories with actual emails
-            for email_data in categorized_emails:
-                email_categories = email_data.get('categories', ['Unclassified'])
-                for category in email_categories:
-                    if category in categories:
-                        email_info = {
-                            "subject": email_data.get('subject', 'No Subject'),
-                            "from_email": email_data.get('from', 'Unknown Sender'),
-                            "hours_unreplied": email_data.get('hours_unreplied', 0),
-                            "inbox_date": email_data.get('inbox_date', '')
-                        }
-                        categories[category].append(email_info)
-            
             # Check if user already exists to preserve user_id
             existing_user = self.dashboard1_collection.find_one({"user_email": user_email})
             user_id = existing_user.get("user_id") if existing_user else self.get_next_user_sequence_id()
             
-            document = {
-                "user_id": user_id,
-                "user_email": user_email,
-                "full_name": full_name,
-                "categories": categories
-            }
+            # Calculate total unreplied count
+            total_unreplied = sum(intent['count'] for intent in intent_array_with_emails)
             
+            document = OrderedDict([
+                ("user_id", user_id),
+                ("full_name", full_name),
+                ("user_email", user_email),
+                ("Intent", intent_array_with_emails),
+                ("totalUnreplied24h", total_unreplied)
+            ])
+            # Remove _id if present in document
+            if "_id" in document:
+                del document["_id"]
             # Use upsert to update existing or insert new
             self.dashboard1_collection.update_one(
                 {"user_email": user_email},
@@ -445,7 +430,7 @@ class GmailUnrepliedChecker:
                 
                 if hours_diff < 0:  # Negative means not replied (inbox is newer than sent)
                     hours_since_inbox = (current_time - inbox_timestamp) / 3600
-                    if hours_since_inbox > 24:
+                    if hours_since_inbox > self.MIN_UNREPLIED_HOURS:
                         categories = self.categorize_labels(details['labels'])
                         for category in categories:
                             category_counts[category] += 1
@@ -463,7 +448,7 @@ class GmailUnrepliedChecker:
             else:
                 # No reply found in SENT folder
                 hours_since_inbox = (current_time - inbox_timestamp) / 3600
-                if hours_since_inbox > 24:
+                if hours_since_inbox > self.MIN_UNREPLIED_HOURS:
                     categories = self.categorize_labels(details['labels'])
                     for category in categories:
                         category_counts[category] += 1
@@ -482,31 +467,41 @@ class GmailUnrepliedChecker:
         # Clear label cache for next user
         self.label_cache = {}
         
-        # Store user data in MongoDB with new structure
-        full_name = user_data.get('full_name', 'Unknown')
-        self.store_user_intent_analytics_mongodb(username, full_name, unreplied_emails)
-        
         # Log detailed email information
         self.log_detailed_emails(username, unreplied_emails)
         
         # Extract user ID from email (part before @)
         user_id = username.split('@')[0] if '@' in username else username
+        full_name = user_data.get('full_name', 'Unknown')
         
-        # Convert categories to new structure (include zero counts)
+        # Build consolidated Intent array with emails in each category
         intent_array = []
         for category in self.TARGET_LABELS:
+            # Get emails for this category
+            category_emails = []
+            for email_data in unreplied_emails:
+                if category in email_data.get('categories', []):
+                    category_emails.append({
+                        "from": email_data.get('from', 'Unknown Sender'),
+                        "subject": email_data.get('subject', 'No Subject'),
+                        "inbox_date": email_data.get('inbox_date', '')
+                    })
+            
             intent_array.append({
                 "category": category,
-                "count": category_counts.get(category, 0)
+                "count": category_counts.get(category, 0),
+                "emails": category_emails
             })
+        
+        # Store consolidated data in MongoDB
+        self.store_user_intent_analytics_mongodb(username, full_name, intent_array)
         
         return {
             'id': user_id,
             'email': username,
-            'fullName': user_data.get('full_name', 'Unknown'),
+            'fullName': full_name,
             self.INTENT_FIELD_NAME: intent_array,
-            'totalUnreplied24h': len(unreplied_emails),
-            self.UNREPLIED_EMAILS_FIELD_NAME: unreplied_emails  # Include detailed email data for Dashboard2
+            'totalUnreplied24h': len(unreplied_emails)
         }
 
     def process_all_users(self):
@@ -566,10 +561,7 @@ class GmailUnrepliedChecker:
                     "totalUnreplied24h": 0
                 })
         
-        # Display and save results
-        self.display_consolidated_results(all_results)
-        self.save_detailed_emails_json(all_results)
-        
+        # Only return results (no JSON file writes)
         return all_results
     
     def log_detailed_emails(self, username, unreplied_emails):
@@ -582,72 +574,10 @@ class GmailUnrepliedChecker:
         for i, email in enumerate(unreplied_emails, 1):
             logger.info(f"Mail{i}: {email['subject']}, Unreplied Hours: {email['hours_unreplied']:.1f}")
     
-    def save_detailed_emails_json(self, results):
-        """Save detailed emails data to separate JSON file with retry"""
-        def _save_operation():
-            detailed_data = {
-                "users": []
-            }
-            
-            for user_result in results['users']:
-                detailed_user = {
-                    'id': user_result['id'],
-                    'email': user_result['email'],
-                    'fullName': user_result['fullName'],
-                    'totalUnreplied24h': user_result['totalUnreplied24h'],
-                    self.UNREPLIED_EMAILS_FIELD_NAME: user_result.get(self.UNREPLIED_EMAILS_FIELD_NAME, [])
-                }
-                detailed_data["users"].append(detailed_user)
-            
-            with open(self.DETAILED_JSON_FILE, 'w') as f:
-                json.dump(detailed_data, f, indent=2)
-            
-            logger.info(f"Detailed emails data saved to: {self.DETAILED_JSON_FILE}")
-            return True
-        
-        return retry_service.file_retry(_save_operation, operation_name="Save detailed emails JSON")
-    
+
     def display_consolidated_results(self, results):
         """Display consolidated results for all users"""
-        logger.info("CONSOLIDATED UNREPLIED EMAILS REPORT")
-        
-        # Per-user summary
-        total_unreplied = 0
-        for user_result in results['users']:
-            total_unreplied += user_result['totalUnreplied24h']
-            logger.info(f"Completed: {user_result['email']} ({user_result['fullName']}): {user_result['totalUnreplied24h']} unreplied")
-        
-        
-        # Create summary data without detailed emails
-        summary_data = {
-            "users": []
-        }
-        
-        for user_result in results['users']:
-            summary_user = {
-                'id': user_result['id'],
-                'email': user_result['email'],
-                'fullName': user_result['fullName'],
-                self.INTENT_FIELD_NAME: user_result.get(self.INTENT_FIELD_NAME, []),
-                'totalUnreplied24h': user_result['totalUnreplied24h']
-            }
-            summary_data["users"].append(summary_user)
-        
-        # Save summary JSON to file with retry
-        def _save_summary_operation():
-            report_filename_format = self.config.get('settings', 'report_filename_format', fallback='unreplied_analysis_%Y%m%d_%H%M%S.json')
-            if '%' in report_filename_format:
-                filename = datetime.now(self.ist_timezone).strftime(report_filename_format)
-            else:
-                filename = self.SUMMARY_JSON_FILE  # Use the programmatic path
-            
-            with open(filename, 'w') as f:
-                json.dump(summary_data, f, indent=2)
-            
-            logger.info(f"Summary report saved to: {filename}")
-            return True
-        
-        retry_service.file_retry(_save_summary_operation, operation_name="Save summary report JSON")
+        self.log_consolidated_results(results)
 
 def main():
     """Main function with comprehensive logging"""
@@ -668,7 +598,7 @@ def main():
         
         end_time = datetime.now(checker.ist_timezone)
         duration = (end_time - start_time).total_seconds()
-        logger.info(f"Analysis completed in {duration:.2f} seconds")
+        logger.info(f"Analysis completed in {duration:.2f} seconds")        
             
     except Exception as e:
         logger.error(f"Critical error during analysis: {e}")
@@ -684,4 +614,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()                        
