@@ -598,7 +598,7 @@ def main():
         
         end_time = datetime.now(checker.ist_timezone)
         duration = (end_time - start_time).total_seconds()
-        logger.info(f"Analysis completed in {duration:.2f} seconds")        
+        logger.info(f"Analysis completed in {duration:.2f} seconds")
             
     except Exception as e:
         logger.error(f"Critical error during analysis: {e}")
@@ -614,4 +614,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()                        
+    main()
