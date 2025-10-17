@@ -8,12 +8,23 @@ Separation of concerns: Strategy Pattern + Factory Pattern + Chain of Responsibi
 
 import time
 import logging
+import configparser
+import os
 from abc import ABC, abstractmethod
 from typing import Callable, Any, Optional, Type, Union
 from enum import Enum
 from dataclasses import dataclass
 
 logger = logging.getLogger("retry_framework")
+
+# Load configuration
+config = configparser.ConfigParser()
+config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config.ini')
+config.read(config_path)
+
+# Read retry settings from config
+RETRY_ATTEMPTS = config.getint('settings', 'retry_attempts', fallback=3)
+RETRY_DELAY = config.getint('settings', 'retry_delay', fallback=60)
 
 
 class OperationType(Enum):
@@ -64,7 +75,7 @@ class FixedDelayStrategy(RetryStrategy):
 class ExponentialBackoffStrategy(RetryStrategy):
     """Exponential backoff retry strategy"""
     
-    def __init__(self, base_delay: float = 1.0, max_delay: float = 30.0, 
+    def __init__(self, base_delay: float = 2.0, max_delay: float = 30.0, 
                  multiplier: float = 2.0, max_attempts: int = 3):
         self.base_delay = base_delay
         self.max_delay = max_delay
@@ -180,11 +191,11 @@ class RetryFactory:
     def gmail_executor() -> RetryExecutor:
         """
         Gmail API retry executor:
-        - 65 second fixed delay (quota management)
-        - 3 attempts maximum  
+        - Configurable delay (quota management)
+        - Configurable attempts maximum  
         - Returns None on failure (preserves previous JSON data)
         """
-        strategy = FixedDelayStrategy(delay_seconds=65, max_attempts=3)
+        strategy = FixedDelayStrategy(delay_seconds=RETRY_DELAY, max_attempts=RETRY_ATTEMPTS)
         fallback = FallbackHandler(
             action=FallbackAction.LOG_AND_CONTINUE
         )
@@ -194,16 +205,16 @@ class RetryFactory:
     def mongodb_executor() -> RetryExecutor:
         """
         MongoDB retry executor:
-        - Exponential backoff (1s → 2s → 4s)
+        - Exponential backoff (configurable base delay)
         - 30 second maximum delay
-        - 3 attempts maximum
+        - Configurable attempts maximum
         - Returns None on failure (graceful degradation)
         """
         strategy = ExponentialBackoffStrategy(
             base_delay=1.0, 
             max_delay=30.0, 
             multiplier=2.0, 
-            max_attempts=3
+            max_attempts=RETRY_ATTEMPTS
         )
         fallback = FallbackHandler(action=FallbackAction.RETURN_NONE)
         return RetryExecutor(strategy, fallback)
@@ -213,10 +224,10 @@ class RetryFactory:
         """
         File operation retry executor:
         - 1 second fixed delay
-        - 3 attempts maximum
+        - Configurable attempts maximum
         - Returns empty dict on failure
         """
-        strategy = FixedDelayStrategy(delay_seconds=1.0, max_attempts=3)
+        strategy = FixedDelayStrategy(delay_seconds=1.0, max_attempts=RETRY_ATTEMPTS)
         fallback = FallbackHandler(
             action=FallbackAction.RETURN_DEFAULT,
             default_value={}
@@ -246,7 +257,7 @@ class RetryService:
         return result.result
     
     def gmail_retry(self, func: Callable, *args, operation_name: str = "Gmail API", **kwargs) -> Any:
-        """Gmail API retry with 65s fixed delay"""
+        """Gmail API retry with configurable fixed delay"""
         return self.execute(OperationType.GMAIL_API, func, *args, operation_name=operation_name, **kwargs)
     
     def mongodb_retry(self, func: Callable, *args, operation_name: str = "MongoDB", **kwargs) -> Any:
